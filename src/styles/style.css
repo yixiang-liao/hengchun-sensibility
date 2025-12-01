@@ -1,0 +1,365 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FanWunHak";
+  src: url("/src/assets/font/FanWunHak-TW-R.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "FanWunHak-Bold";
+  src: url("/src/assets/font/FanWunHak-TW-B.ttf") format("truetype");
+  font-style: normal;
+}
+* {
+  font-family: "FanWunHak", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about {
+  min-height: 80vh;
+  padding-top: 100px; /* 和 navbar 高度對應 */
+}
+
+.inner-pages {
+  min-height: 100vh;
+  scroll-margin-top: 80px; /* 對應你的 navbar 高度 */
+}
+
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 15px 10rem !important;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px !important;
+  min-height: unset !important;
+  max-height: unset !important;
+  width: 100%;
+  position: fixed !important; /* 固定位置 */
+  top: 0 !important; /* 從上方 0 開始 */
+  left: 0 !important; /* 從左側 0 開始 */
+  z-index: 1000; /* 疊層順序要高，避免被其他元素遮住 */
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.navbar .logo a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  height: 25px;
+}
+.navbar .logo .logo-text {
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+.navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+.navbar .menu-icon .bar {
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+.navbar .menu-icon .bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar .menu-icon .bar.open:nth-child(2) {
+  opacity: 0;
+}
+.navbar .menu-icon .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 !important;
+  font-size: 1.2rem !important;
+}
+.navbar .nav-links button {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.2rem !important;
+  padding: 5px 10px;
+}
+.navbar .nav-links button:hover {
+  letter-spacing: 1px;
+  background-color: #d1421c;
+  color: white;
+}
+.navbar .nav-links li {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.2rem !important;
+  padding: 5px 10px;
+}
+.navbar .nav-links li a:hover {
+  letter-spacing: 1px;
+  background-color: #d1421c;
+  color: white;
+}
+
+@media (max-width: 1210px) {
+  .navbar {
+    padding: 1rem 2rem !important;
+  }
+  .navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar .logo .logo-text {
+    display: none;
+  }
+  .navbar .menu-icon {
+    display: flex;
+  }
+  .navbar .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+}
+.footer {
+  background-color: rgb(39, 37, 37);
+  padding: 2rem 2rem 0 2rem;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.back-to-top:hover {
+  opacity: 1;
+}
+.back-to-top.show {
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.title {
+  margin: 1rem 0;
+  text-align: center;
+}
+.title h1 {
+  display: inline-block;
+  border-top: 2px solid #d1421c;
+  border-bottom: 2px solid #d1421c;
+  padding: 1rem 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.homepage {
+  width: 100vw;
+}
+
+.home {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  background-image: url("./img/homepage/IMG_5119.JPG");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+@media (min-width: 1181px) {
+  .home {
+    background-attachment: fixed; /* 關鍵 */
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+.home .profile {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .profile .title-group {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+}
+.home .profile .title-group h1 {
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  font-family: "FanWunHak-Bold";
+  font-size: clamp(3.2rem, 7vw, 4.8rem);
+  line-height: 1.05;
+}
+.home .profile .title-group h2 {
+  margin: 0.4rem 0 0;
+  text-align: center;
+  color: white;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: 1px;
+}
+.home .profile .title-group p {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1.5px;
+}
+.home .profile .title-group .line {
+  width: 60px;
+  height: 4px;
+  background-color: white;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 1299px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh; /* 讓整個區塊至少撐滿一個畫面高度 */
+  }
+  .home .profile {
+    margin: 10rem 20px;
+  }
+}
+.inner-pages {
+  margin: 2rem 20rem;
+}
+.inner-pages .inner_p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.inner-pages .grid-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* 滑過時：遮色片淡出、圖片微放大 */
+}
+.inner-pages .grid-container .card {
+  position: relative;
+  width: 300px;
+  height: 350px; /* 你可調整高度 */
+  overflow: hidden;
+  border-radius: 12px; /* 可選：讓圖片更有質感 */
+  display: block; /* ⭐讓 <a> 能用 block 寬度 */
+  text-decoration: none; /* ⭐移除連結底線 */
+  color: inherit; /* ⭐保持文字顏色不變 */
+  margin: 1rem 0;
+}
+.inner-pages .grid-container .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inner-pages .grid-container .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.539); /* 可調暗度 */
+}
+.inner-pages .grid-container .card .text {
+  position: absolute;
+  bottom: 20px; /* 如果要置中改成 top: 50% */
+  left: 50%; /* 使文字盒子水平位置在中間 */
+  transform: translateX(-50%); /* 讓文字自己對齊中心 */
+  text-align: center; /* 讓文字內容置中 */
+  color: white;
+  z-index: 2;
+  width: -moz-max-content;
+  width: max-content; /* 保留內容寬度 */
+  letter-spacing: 1px;
+}
+.inner-pages .grid-container .card .text h3 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+.inner-pages .grid-container .card .text p {
+  margin: 0.25rem 0 0;
+  font-size: 1.2rem;
+}
+.inner-pages .grid-container .card:hover .overlay {
+  opacity: 0; /* ⭐遮色片消失 */
+}
+.inner-pages .grid-container .card:hover img {
+  transform: scale(1.05); /* ⭐圖片微微放大（質感效果）*/
+}
+
+@media (max-width: 1210px) {
+  .inner-pages {
+    margin: 2rem 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

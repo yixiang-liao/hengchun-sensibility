@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "FanWunHak";
+  src: url("/src/assets/font/FanWunHak-TW-R.ttf") format("truetype");
+  //   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FanWunHak-Bold";
+  src: url("/src/assets/font/FanWunHak-TW-B.ttf") format("truetype");
+  //   font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "FanWunHak", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about {
+  min-height: 80vh;
+  padding-top: 100px; /* 和 navbar 高度對應 */
+}
+
+.inner-pages{
+  min-height: 100vh; // ✅ 高度自適應內容
+//   padding: 2rem;
+  scroll-margin-top: 80px; /* 對應你的 navbar 高度 */
+}
+
+@import "./components/Navbar";
+@import "./components/Footer";
+@import "./components/BackToTopButton";
+@import "./components/Title";
+
+@import "./pages/HomePage";
+
+@import "./layouts/HomePage/_Home";
+@import "./layouts/HomePage/_InnerPages";

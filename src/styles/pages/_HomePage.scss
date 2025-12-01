@@ -1,0 +1,11 @@
+.homepage {
+  // height: 100vh;
+  width: 100vw;
+  
+}
+
+// 手機版樣式 - 移到外面
+@media (max-width: 1299px) {
+  .homepage {
+  }
+}
