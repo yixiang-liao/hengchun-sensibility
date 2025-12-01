@@ -76,6 +76,11 @@ const Navbar = () => {
             運動半島
           </Link>
         </li>
+        <li>
+          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+            生活象限
+          </Link>
+        </li>
         {/* <li>
           <button onClick={() => handleNavClick("projects")}>Projects</button>
         </li> */}
