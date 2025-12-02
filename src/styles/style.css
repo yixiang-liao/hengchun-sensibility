@@ -1,16 +1,7 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "FanWunHak";
-  src: url("/src/assets/font/FanWunHak-TW-R.ttf") format("truetype");
-  font-style: normal;
-}
-@font-face {
-  font-family: "FanWunHak-Bold";
-  src: url("/src/assets/font/FanWunHak-TW-B.ttf") format("truetype");
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap");
 * {
-  font-family: "FanWunHak", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .app {
@@ -49,7 +40,6 @@
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  font-weight: bold;
 }
 .navbar .logo a {
   text-decoration: none;
@@ -119,7 +109,6 @@
   padding: 5px 10px;
 }
 .navbar .nav-links li a:hover {
-  letter-spacing: 1px;
   background-color: #d1421c;
   color: white;
 }
@@ -212,14 +201,16 @@
   background-position: center center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
+  padding-top: 80px;
 }
 .home::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
   z-index: 0;
   pointer-events: none;
 }
@@ -249,6 +240,12 @@
   width: -moz-max-content;
   width: max-content;
 }
+.home .profile .title-group img {
+  width: clamp(200px, 40vw, 300px);
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.35));
+}
 .home .profile .title-group h1 {
   margin: 0;
   letter-spacing: 5px;
@@ -268,7 +265,7 @@
 .home .profile .title-group p {
   font-size: 1.5rem;
   color: white;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 .home .profile .title-group .line {
   width: 60px;
@@ -276,16 +273,31 @@
   background-color: white;
   margin: 1.5rem 0;
 }
+.home .illustrations {
+  z-index: 1;
+  margin-bottom: 5rem;
+  opacity: 0.85;
+}
+.home .illustrations img {
+  width: 100px;
+  filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.35));
+}
+.home .illustrations img:hover {
+  filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.65));
+}
 
 @media (max-width: 1299px) {
   .home {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     min-height: 100vh; /* 讓整個區塊至少撐滿一個畫面高度 */
   }
-  .home .profile {
-    margin: 10rem 20px;
+  .home .illustrations {
+    margin-bottom: 3rem;
+  }
+  .home .illustrations img {
+    width: 80px;
   }
 }
 .inner-pages {

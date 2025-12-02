@@ -1,19 +1,7 @@
-@font-face {
-  font-family: "FanWunHak";
-  src: url("/src/assets/font/FanWunHak-TW-R.ttf") format("truetype");
-  //   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "FanWunHak-Bold";
-  src: url("/src/assets/font/FanWunHak-TW-B.ttf") format("truetype");
-  //   font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 
 * {
-  font-family: "FanWunHak", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .app {
