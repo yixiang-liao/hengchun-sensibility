@@ -1,7 +1,7 @@
 .footer {
   background-color: rgb(39, 37, 37);
   padding: 2rem 2rem 0 2rem;
-  .header {
+  .footer-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
 // 手機版樣式 - 移到外面
 @media (max-width: 1299px) {
   .footer {
-    .header {
+    .footer-header {
       .logo {
         width: 200px;
       }

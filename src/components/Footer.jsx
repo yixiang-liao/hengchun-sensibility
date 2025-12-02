@@ -5,7 +5,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="footer" id="footer">
-      <div className="header">
+      <div className="footer-header">
         <div className="logo">
           <img
             src="./logo/logo-2.png"

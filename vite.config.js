@@ -5,6 +5,13 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vite.dev/config/
 export default defineConfig({
   base: "/hengchun-sensibility/",
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ['import'] // ← 關閉 @import 的警告
+      }
+    }
+  },
   plugins: [
     react(),
     VitePWA({

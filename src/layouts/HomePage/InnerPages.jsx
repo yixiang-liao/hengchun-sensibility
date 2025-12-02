@@ -63,7 +63,7 @@ const InnerPages = () => {
               <p className="inner_p">自然共生的法則</p>
             </div>
           </a>
-          <a href="/your-link" className="card">
+          <a href="./#/culture" className="card">
             <img src="./img/homepage/IMG_4278.JPG" alt="" />
             <div className="overlay"></div>
             <div className="text">
@@ -71,7 +71,7 @@ const InnerPages = () => {
               <p className="inner_p">生活累積的厚度</p>
             </div>
           </a>
-          <a href="/your-link" className="card">
+          <a href="./#/flavor" className="card">
             <img src="./img/homepage/IMG_4554.JPG" alt="" />
             <div className="overlay"></div>
             <div className="text">
@@ -79,7 +79,7 @@ const InnerPages = () => {
               <p className="inner_p">風土產生的滋味</p>
             </div>
           </a>
-          <a href="/your-link" className="card">
+          <a href="./#/sport" className="card">
             <img src="./img/homepage/IMG_4599.JPG" alt="" />
             <div className="overlay"></div>
             <div className="text">
@@ -87,7 +87,7 @@ const InnerPages = () => {
               <p className="inner_p">與自然共振的自由</p>
             </div>
           </a>
-          <a href="/your-link" className="card">
+          <a href="./#/move" className="card">
             <img src="./img/homepage/IMG_4922.JPG" alt="" />
             <div className="overlay"></div>
             <div className="text">

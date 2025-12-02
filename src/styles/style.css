@@ -158,28 +158,28 @@ html {
   background-color: rgb(39, 37, 37);
   padding: 2rem 2rem 0 2rem;
 }
-.footer .header {
+.footer .footer-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.footer .header .logo {
+.footer .footer-header .logo {
   width: 300px;
   height: auto;
 }
-.footer .header .content {
+.footer .footer-header .content {
   margin-top: 0.5rem;
   color: rgb(206, 206, 206);
 }
-.footer .header .content ul {
+.footer .footer-header .content ul {
   list-style: none;
 }
-.footer .header .content ul li {
+.footer .footer-header .content ul li {
   margin-bottom: 0.5rem;
 }
-.footer .header .content a {
+.footer .footer-header .content a {
   color: inherit; /* 🔥 跟文字一樣的顏色 */
   text-decoration: none; /* 🔥 移除底線 */
   font-size: 1.2rem;
@@ -199,7 +199,7 @@ html {
 }
 
 @media (max-width: 1299px) {
-  .footer .header .logo {
+  .footer .footer-header .logo {
     width: 200px;
   }
   .footer .bottom p {
