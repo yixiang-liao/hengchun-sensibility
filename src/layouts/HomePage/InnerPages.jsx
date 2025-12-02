@@ -55,7 +55,7 @@ const InnerPages = () => {
           讓我們從自然、生態、文化、食物、運動與生活出發，看見恆春如何在感性與永續之間，找到屬於自己的呼吸節奏。
         </p>
         <div className="grid-container">
-          <a href="/your-link" className="card">
+          <a href="./#/ecology" className="card">
             <img src="./img/homepage/000_5470.jpg" alt="" />
             <div className="overlay"></div>
             <div className="text">
