@@ -12,7 +12,7 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: '恆春感性 Hengchun Sensibility',
-        short_name: 'IHL',
+        short_name: '恆春感性 Hengchun Sensibility',
         start_url: '/hengchun-sensibility/',
         display: 'standalone',
         background_color: '#ffffff',
