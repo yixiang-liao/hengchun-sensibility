@@ -4,20 +4,24 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.about {
-  min-height: 80vh;
-  padding-top: 100px; /* 和 navbar 高度對應 */
-}
-
 .inner-pages {
   min-height: 100vh;
   scroll-margin-top: 80px; /* 對應你的 navbar 高度 */
+}
+
+.pages {
+  min-height: 100vh;
+  padding-top: 80px; /* 和 navbar 高度對應 */
 }
 
 .navbar {
@@ -149,7 +153,54 @@
   background-color: rgb(39, 37, 37);
   padding: 2rem 2rem 0 2rem;
 }
+.footer .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer .header .logo {
+  width: 300px;
+  height: auto;
+}
+.footer .header .content {
+  margin-top: 0.5rem;
+  color: rgb(206, 206, 206);
+}
+.footer .header .content ul {
+  list-style: none;
+}
+.footer .header .content ul li {
+  margin-bottom: 0.5rem;
+}
+.footer .header .content a {
+  color: inherit; /* 🔥 跟文字一樣的顏色 */
+  text-decoration: none; /* 🔥 移除底線 */
+  font-size: 1.2rem;
+}
+.footer .bottom {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #555;
+}
+.footer .bottom p {
+  color: #ccc;
+  text-align: center;
+  font-size: 1rem;
+  line-height: auto !important;
+  margin: 0 !important;
+  letter-spacing: 1px;
+}
 
+@media (max-width: 1299px) {
+  .footer .header .logo {
+    width: 200px;
+  }
+  .footer .bottom p {
+    font-size: 0.8rem;
+  }
+}
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -303,6 +354,19 @@
 .inner-pages {
   margin: 2rem 20rem;
 }
+.inner-pages .block {
+  margin: 4rem 0;
+}
+.inner-pages .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.inner-pages .content img {
+  width: 400px;
+  height: auto;
+}
 .inner-pages .inner_p {
   font-size: 1.2rem;
   text-align: justify;
@@ -373,5 +437,8 @@
 @media (max-width: 1210px) {
   .inner-pages {
     margin: 2rem 5rem;
+  }
+  .inner-pages .content {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

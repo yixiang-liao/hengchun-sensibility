@@ -1,5 +1,20 @@
 .inner-pages {
   margin: 2rem 20rem;
+  .block{
+    margin: 4rem 0;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    // flex-wrap: wrap;
+    img{
+      width: 400px;
+      height: auto;
+      // border-radius: 12px;
+    }
+  }
   .inner_p{
     font-size: 1.2rem;
     text-align: justify;
@@ -72,5 +87,8 @@
 @media (max-width: 1210px) {
   .inner-pages {
     margin: 2rem 5rem;
+  .content{
+    flex-wrap: wrap;
+  }
   }
 }

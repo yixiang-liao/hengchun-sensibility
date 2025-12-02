@@ -47,37 +47,37 @@ const Navbar = () => {
           <button onClick={() => handleNavClick("about")}>關於我們</button>
         </li> */}
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
             關於我們
           </Link>
         </li>
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/ecology" onClick={() => setIsOpen(false)}>
             生態半島
           </Link>
         </li>
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/culture" onClick={() => setIsOpen(false)}>
             文化半島
           </Link>
         </li>
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
-            生態半島
-          </Link>
-        </li>
-        <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/flavor" onClick={() => setIsOpen(false)}>
             風味半島
           </Link>
         </li>
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/sport" onClick={() => setIsOpen(false)}>
             運動半島
           </Link>
         </li>
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/move" onClick={() => setIsOpen(false)}>
+            移居半島
+          </Link>
+        </li>
+        <li>
+          <Link to="/quadrant" onClick={() => setIsOpen(false)}>
             生活象限
           </Link>
         </li>

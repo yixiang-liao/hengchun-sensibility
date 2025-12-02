@@ -4,21 +4,25 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.about {
-  min-height: 80vh;
-  padding-top: 100px; /* 和 navbar 高度對應 */
-}
-
 .inner-pages{
   min-height: 100vh; // ✅ 高度自適應內容
 //   padding: 2rem;
   scroll-margin-top: 80px; /* 對應你的 navbar 高度 */
+}
+
+.pages{
+  min-height: 100vh;
+  padding-top: 80px; /* 和 navbar 高度對應 */
 }
 
 @import "./components/Navbar";
