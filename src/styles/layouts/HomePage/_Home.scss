@@ -11,14 +11,22 @@
     // background-attachment: fixed; /* 關鍵 */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     overflow: hidden;
+    padding-top: 80px;
 
     &::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.5);
+      // background: rgba(0, 0, 0, 0.6);
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
       z-index: 0;
       pointer-events: none;
     }
@@ -50,6 +58,12 @@
         flex-direction: column;
         align-items: center;
         width: max-content;
+        img{
+          width: clamp(200px, 40vw, 300px);
+          height: auto;
+          margin-bottom: 1rem;
+          filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.35));
+        }
 
         h1 {
           margin: 0;
@@ -72,13 +86,26 @@
         p {
           font-size: 1.5rem;
           color: white;
-          letter-spacing: 1.5px;
+          letter-spacing: 2px;
         }
         .line {
           width: 60px;
           height: 4px;
           background-color: white;
           margin: 1.5rem 0;
+        }
+      }
+    }
+    .illustrations{
+        z-index: 1;
+        margin-bottom: 5rem;
+        opacity: 0.85;
+      img{
+        width: 100px;
+        filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.35));
+
+        &:hover{
+          filter: drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.65));
         }
       }
     }
@@ -89,13 +116,20 @@
     .home {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      // justify-content: flex-start;
+      justify-content: space-between;
       min-height: 100vh; /* 讓整個區塊至少撐滿一個畫面高度 */
       .profile {
-        margin: 10rem 20px;
+        // margin: 20rem 20px;
         // margin-top: auto; /* 將 .profile 推到底部 */
         // margin-bottom: 2rem;
         // padding: 0 20px;
+      }
+      .illustrations{
+        margin-bottom: 3rem;
+        img{
+          width: 80px;
+        }
       }
     }
 }
