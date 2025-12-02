@@ -18,9 +18,9 @@ const Footer = () => {
             <li>
               <Link to="/">首頁</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/about">關於我們</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/ecology">生態半島</Link>
             </li>

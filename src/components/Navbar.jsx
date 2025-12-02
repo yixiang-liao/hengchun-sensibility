@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="logo">
         <Link to="/">
           <img src="./logo/logo.png" alt="logo" />
-          <span className="logo-text">恆春感性 Hengchun Sensibility</span>
+          {/* <span className="logo-text">恆春感性 Hengchun Sensibility</span> */}
         </Link>
       </div>
       <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
@@ -46,11 +46,11 @@ const Navbar = () => {
         {/* <li>
           <button onClick={() => handleNavClick("about")}>關於我們</button>
         </li> */}
-        <li>
+        {/* <li>
           <Link to="/about" onClick={() => setIsOpen(false)}>
             關於我們
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/ecology" onClick={() => setIsOpen(false)}>
             生態半島
