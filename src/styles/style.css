@@ -462,7 +462,7 @@ html {
     margin: 2rem 5rem;
   }
   .inner-pages .img_group img {
-    width: 300px;
+    width: 300px !important;
   }
   .inner-pages .content {
     flex-wrap: wrap;
