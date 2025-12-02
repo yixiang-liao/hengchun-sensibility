@@ -24,7 +24,7 @@
 
 .about {
   min-height: 80vh;
-  padding-top: 100px; /* 和 navbar 高度對應 */
+  padding-top: 80px; /* 和 navbar 高度對應 */
 }
 
 .inner-pages{
@@ -37,6 +37,8 @@
 @import "./components/Footer";
 @import "./components/BackToTopButton";
 @import "./components/Title";
+@import "./components/Header";
+
 
 @import "./pages/HomePage";
 

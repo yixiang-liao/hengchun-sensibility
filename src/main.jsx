@@ -5,6 +5,7 @@ import App from './App';
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
+import "./styles/style.scss";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);

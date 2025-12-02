@@ -1,6 +1,6 @@
-// routes/index.jsx
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
+import About from "../pages/About";
 import ScrollToTop from "../services/ScrollToTop";
 
 const AppRoutes = () => {
@@ -9,6 +9,7 @@ const AppRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );

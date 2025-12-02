@@ -47,7 +47,7 @@ const Navbar = () => {
           <button onClick={() => handleNavClick("about")}>關於我們</button>
         </li> */}
         <li>
-          <Link to="/acknowledgements" onClick={() => setIsOpen(false)}>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
             關於我們
           </Link>
         </li>
