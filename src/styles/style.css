@@ -306,7 +306,6 @@ html {
   color: white;
   margin-top: -20px;
   border: none;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   z-index: 4;
 }
 .header h3 {
@@ -315,8 +314,86 @@ html {
   margin-top: -20px;
   border: none;
   letter-spacing: 4px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   z-index: 4;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header2 .header-content {
+  position: relative;
+}
+.header2 .header-content .discover-frame {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* 上下水平線 */
+  margin: 3rem 0;
+  z-index: 3 !important;
+}
+.header2 .header-content .discover-frame .frame-grid {
+  width: auto;
+  display: flex;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.header2 .header-content .discover-frame .frame-grid .left {
+  text-align: center;
+  width: auto;
+  border-right: 2px solid #000;
+}
+.header2 .header-content .discover-frame .frame-grid .left .left-top {
+  padding: 10px 20px;
+  border-bottom: 2px solid #000;
+}
+.header2 .header-content .discover-frame .frame-grid .left .left-bottom {
+  padding: 10px 20px;
+}
+.header2 .header-content .discover-frame .frame-grid .left h1 {
+  font-size: 2rem;
+  letter-spacing: 0.8rem;
+  font-weight: bold;
+}
+.header2 .header-content .discover-frame .frame-grid .left h2 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding-top: 5px;
+}
+.header2 .header-content .discover-frame .frame-grid .right {
+  width: 150px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header2 .header-content .discover-frame .frame-grid .right svg {
+  width: 100px;
+  height: auto;
+  color: #000;
+}
+.header2 .header-content .bottom {
+  position: absolute;
+  top: -2rem;
+  left: -8rem;
+  z-index: 1;
+}
+.header2 .header-content .bottom svg {
+  width: 200px;
+  height: auto;
+  color: rgba(196, 196, 196, 0.4431372549);
+}
+.header2 .header-img {
+  width: 500px;
+  height: auto;
+  margin-top: 7rem; /* 讓圖片往下 */
+}
+.header2 .header-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .homepage {

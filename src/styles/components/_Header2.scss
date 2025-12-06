@@ -1,0 +1,80 @@
+.header2 {
+  display: flex;
+  justify-content: space-evenly;
+  .header-content {
+    position: relative;
+    .discover-frame {
+      width: fit-content;
+      position: relative; 
+      display: flex;
+      flex-direction: column; /* 上下水平線 */
+      margin: 3rem 0;
+      z-index: 3 !important;
+      .frame-grid {
+        width: auto;
+        display: flex;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        .left {
+          text-align: center;
+          width: auto;
+          border-right: 2px solid #000;
+          .left-top {
+            padding: 10px 20px;
+            border-bottom: 2px solid #000;
+          }
+          .left-bottom {
+            padding: 10px 20px;
+          }
+          h1 {
+            font-size: 2rem;
+            letter-spacing: 0.8rem;
+            font-weight: bold;
+          }
+          h2 {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            padding-top: 5px;
+          }
+        }
+        .right {
+          width: 150px;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 100px;
+            height: auto;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      position: absolute;
+      top: -2rem; // 往上錯位（可調整）
+      left: -8rem; // 往左錯位（可調整）
+      z-index: 1; // 確保疊在表格上方
+
+      svg {
+        width: 200px; // 大小可自行調整
+        height: auto;
+        color: #c4c4c471;
+      }
+    }
+  }
+  .header-img {
+    width: 500px;
+    height: auto;
+    margin-top: 7rem; /* 讓圖片往下 */
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      // border-radius: 10px;
+    }
+  }
+}
