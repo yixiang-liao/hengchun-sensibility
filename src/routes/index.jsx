@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "../services/ScrollToTop";
 import HomePage from "../pages/HomePage";
-import About from "../pages/About";
 import Ecology from "../pages/Ecology";
 import Culture from "../pages/Culture";
 import Flavor from "../pages/Flavor";
@@ -15,7 +14,6 @@ const AppRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />} />
         <Route path="/ecology" element={<Ecology />} />
         <Route path="/culture" element={<Culture />} />
         <Route path="/flavor" element={<Flavor />} />

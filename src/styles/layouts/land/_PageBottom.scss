@@ -1,0 +1,30 @@
+.page-bottom {
+  width: 100vw;
+  height: 500px;      // 區塊高度
+  position: relative;
+  overflow: hidden;   // 由下裁掉圖片
+  margin-top: auto;   // 貼齊 footer 上方
+}
+
+.page-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;  // 保留圖片上方，從下裁切
+  display: block;
+}
+
+/* 遮色片：上白 → 下透明（正是你要的方向） */
+.page-bottom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    white 0%,            // 最上方完全白
+    rgba(255,255,255,0.8) 30%,   // 中段白但較淡
+    rgba(255,255,255,0.3) 60%,   // 更透明
+    transparent 100%     // 最下方完全透明（顯示圖片）
+  );
+  pointer-events: none;
+}

@@ -1,0 +1,140 @@
+.header2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding: 0 10rem;
+  p{
+    font-size: 1rem;
+  }
+  .header-img {
+    width: 500px;
+    // width: 500px;
+    height: 300px;
+    overflow: hidden;
+      position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+  .header-content {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    .frame-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-top: 2px solid #d1421c;
+        border-bottom: 2px solid #d1421c;
+        width: 100%;
+        .left {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          gap: 1rem;
+          padding: 1rem 0;
+          width: 100%;
+          p {
+            margin-bottom: 0 !important;
+            text-align: justify;
+          }
+          h1 {
+            margin-bottom: 0 !important;
+            font-weight: 400;
+          }
+        }
+        .right {
+          img {
+            width: 70px;
+            height: auto;
+          }
+        }
+      }
+      .bottom {
+        p {
+          margin-bottom: 0 !important;
+          line-height: 2rem;
+        }
+      }
+      .line {
+        width: 100%;
+        height: 2px;
+        background-color: #d1421c;
+      }
+    }
+  }
+}
+
+// 手機版樣式
+@media (max-width: 600px) {
+  .header2 {
+    padding: 0 1rem;
+    margin-top: 1rem;
+
+    .header-img {
+      width: 100%;
+      height: 200px; // 也可以再調整
+    }
+
+    .header-content {
+    .frame-grid {
+      .top{
+        .left{
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+
+      
+    }
+  }
+}
+
+
+// 平板版樣式 - 移到外面
+@media (max-width: 1210px) {
+  .header2{
+    padding: 0 2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+    .header-content{
+      width: 80%;
+      height: auto;
+      .frame-grid{
+        .top{
+          padding: 0.5rem 0;
+        }
+        .bottom{
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  /* 給大桌機 + 4K / 2K 螢幕 */
+  .header2 {
+    
+  }
+}
+
+/* ⭐ 一般筆電（Mac、Windows 14~15吋） */
+@media (min-width: 1211px) and (max-width: 1600px) {
+  /* 這裡是你現在想調整的一般筆電 */
+  /* 給大桌機 + 4K / 2K 螢幕 */
+  .header2 {
+    padding: 0 3rem;
+  }
+}
