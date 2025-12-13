@@ -413,6 +413,9 @@ html {
   .home .illustrations img {
     width: 80px;
   }
+  .popup-img {
+    max-width: 300px;
+  }
 }
 .popup-overlay {
   position: fixed;
@@ -632,6 +635,7 @@ html {
 .header2 .header-content .frame-grid .bottom p {
   margin-bottom: 0 !important;
   line-height: 2rem;
+  font-weight: 300;
 }
 .header2 .header-content .frame-grid .line {
   width: 100%;
@@ -736,6 +740,11 @@ html {
   background-color: transparent;
   font-size: 1.2rem;
 }
+.outline .outline1 .outline-content button:hover {
+  cursor: pointer;
+  background-color: #d1421c;
+  color: #fff;
+}
 
 @media (max-width: 600px) {
   .outline .outline1 {
@@ -794,11 +803,12 @@ html {
 .part-left .top-part {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 20px;
 }
 .part-left .top-part .top-img {
   width: 350px;
-  height: 300px;
+  flex-shrink: 0;
   overflow: hidden;
   position: relative;
 }
@@ -812,19 +822,289 @@ html {
 .part-left .top-part .line {
   width: 2px;
   background-color: #d1421c;
+  height: auto;
 }
 .part-left .top-part .top-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 70%;
+  width: 60%;
 }
 .part-left .top-part .top-text .top-title {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
-.part-left .top-part .top-text .top-title h2, .part-left .top-part .top-text .top-title p {
+.part-left .top-part .top-text .top-title h2,
+.part-left .top-part .top-text .top-title p {
   margin: 0;
+}
+.part-left .top-part .top-text .top-title h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.part-left .top-part .top-text .top-title p {
+  font-weight: 350;
+}
+.part-left .top-part .top-text .description p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+.part-left .top-part .top-text .description .attractions {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+.part-left .top-part .top-text .description .attractions .icon {
+  color: #d1421c;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.part-left .top-part .top-text .description .attractions .highlight {
+  margin-right: 0.5rem;
+  font-weight: 300;
+}
+.part-left .top-part .top-text .description .attractions .locations {
+  font-weight: 400;
+  font-weight: 300;
+}
+.part-left .bottom-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.part-left .bottom-part .bottom-img {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.part-left .bottom-part .bottom-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .part-left {
+    padding: 0 1.5rem;
+    margin-top: 3rem;
+  }
+  .part-left .top-part {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .part-left .top-part .top-img {
+    width: 100%;
+    height: 220px;
+  }
+  .part-left .top-part .line {
+    width: 100%;
+    height: 2px;
+  }
+  .part-left .top-part .top-text {
+    width: 100%;
+  }
+  .part-left .top-part .top-text .top-title {
+    gap: 0.75rem;
+  }
+  .part-left .top-part .top-text .top-title h2 {
+    font-size: 1.3rem;
+  }
+  .part-left .top-part .top-text .top-title p {
+    font-size: 0.95rem;
+  }
+  .part-left .top-part .top-text .description p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    text-align: left;
+  }
+  .part-left .top-part .top-text .description .attractions {
+    font-size: 0.95rem;
+  }
+  .part-left .bottom-part {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .part-left .bottom-part .bottom-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1210px) {
+  .part-left {
+    padding: 0 4rem;
+  }
+  .part-left .top-part {
+    gap: 1.5rem;
+  }
+  .part-left .top-part .top-img {
+    width: 280px;
+  }
+  .part-left .top-part .top-text {
+    width: calc(100% - 280px);
+  }
+  .part-left .top-part .top-text .description p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+  .part-left .bottom-part {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .part-left .bottom-part .bottom-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (min-width: 1920px) {
+  .part-left {
+    padding: 0 18rem;
+    margin-top: 7rem;
+  }
+  .part-left .top-part {
+    gap: 3rem;
+  }
+  .part-left .top-part .top-img {
+    width: 420px;
+  }
+  .part-left .top-part .top-text {
+    max-width: 900px;
+  }
+  .part-left .top-part .top-text .top-title h2 {
+    font-size: 1.7rem;
+  }
+  .part-left .top-part .top-text .top-title p {
+    font-size: 1.05rem;
+  }
+  .part-left .top-part .top-text .description p {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+  }
+  .part-left .top-part .top-text .description .attractions {
+    font-size: 1.05rem;
+  }
+  .part-left .bottom-part {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .part-left .bottom-part .bottom-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+.part-right {
+  /* 基本沿用 part-left，不重複寫 padding / margin */
+}
+.part-right .top-part {
+  /* 只調整排列方向 */
+  /* 中線位置修正（左右一致） */
+  /* 文字區在右側時，對齊微調 */
+}
+.part-right .top-part .line {
+  margin: 0;
+}
+.part-right .top-part .top-text {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* =========================
+   手機版（≤ 768px）
+   ========================= */
+@media (max-width: 768px) {
+  .part-right .top-part {
+    /* 手機統一改直向，閱讀順序一致 */
+    flex-direction: column;
+    /* 強制順序：圖片 → 線 → 文字 */
+  }
+  .part-right .top-part .top-img {
+    order: 0;
+    width: 100%;
+    height: 220px;
+  }
+  .part-right .top-part .line {
+    order: 1;
+    width: 100%;
+    height: 2px;
+  }
+  .part-right .top-part .top-text {
+    order: 2;
+    width: 100%;
+  }
+  .part-right .bottom-part {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .part-right .bottom-part .bottom-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+/* =========================
+   平板（769px – 1210px）
+   ========================= */
+@media (min-width: 769px) and (max-width: 1210px) {
+  .part-right .top-part {
+    gap: 1.5rem;
+  }
+  .part-right .top-part .top-img {
+    width: 280px;
+  }
+  .part-right .top-part .top-text {
+    width: calc(100% - 280px);
+  }
+  .part-right .bottom-part {
+    gap: 1.25rem;
+  }
+  .part-right .bottom-part .bottom-img {
+    width: calc(50% - 0.75rem);
+    height: 180px;
+  }
+}
+/* =========================
+   27 吋以上（≥ 1920px）
+   ========================= */
+@media (min-width: 1920px) {
+  .part-right .top-part {
+    gap: 3rem;
+  }
+  .part-right .top-part .top-img {
+    width: 420px;
+  }
+  .part-right .top-part .top-text {
+    max-width: 900px;
+  }
+  .part-right .top-part .top-text .top-title h2 {
+    font-size: 1.7rem;
+  }
+  .part-right .top-part .top-text .top-title p {
+    font-size: 1.05rem;
+  }
+  .part-right .top-part .top-text .description p {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+  }
+  .part-right .top-part .top-text .description .attractions {
+    font-size: 1.05rem;
+  }
+  .part-right .bottom-part {
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+  .part-right .bottom-part .bottom-img {
+    width: 420px;
+    height: 240px;
+  }
 }/*# sourceMappingURL=style.css.map */

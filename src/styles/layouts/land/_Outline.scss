@@ -51,6 +51,11 @@
         border: none;
         background-color: transparent;
         font-size: 1.2rem;
+        &:hover{
+          cursor: pointer;
+          background-color: #d1421c;
+          color: #fff;
+        }
       }
     }
   }
