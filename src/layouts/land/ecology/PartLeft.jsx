@@ -1,4 +1,5 @@
 import React from "react";
+import BottomGallery from "./BottomGallery";
 
 const PartLeft = ({
   id,
@@ -46,14 +47,15 @@ const PartLeft = ({
           </div>
         </div>
       </div>
-      <div className="bottom-part">
+      <BottomGallery images={bottomImg} />
+      {/* <div className="bottom-part">
         {bottomImg.length > 0 &&
           bottomImg.map((imgSrc, index) => (
             <div className="bottom-img" key={index}>
               <img src={imgSrc} alt={`${title} bottom ${index + 1}`} />
             </div>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 };
