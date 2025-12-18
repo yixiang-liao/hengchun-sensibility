@@ -84,7 +84,7 @@ const Culture = () => {
       />
       <PartRight
         id="youth-innovation"
-        image="./img/culture/IMG_4789.JPG"
+        image="./img/culture/IMG_4762.JPG"
         title="青創浪潮"
         subtitle="歷史的文化新生命"
         paragraphs={[
@@ -96,7 +96,7 @@ const Culture = () => {
           ],
         ]}
         bottomImg={[
-          "./img/culture/IMG_4916.JPG", "./img/culture/IMG_4932.JPG", "./img/culture/IMG_4949.JPG", "./img/culture/IMG_4961.JPG", "./img/culture/IMG_4962.JPG", "./img/culture/IMG_4973.JPG", "./img/culture/IMG_4789.JPG", "./img/culture/IMG_4779.JPG", "./img/culture/IMG_4776.JPG", "./img/culture/IMG_4769.JPG", "./img/culture/IMG_4755.JPG", "./img/culture/IMG_4749.JPG",
+          "./img/culture/IMG_4916.JPG", "./img/culture/IMG_4932.JPG", "./img/culture/IMG_4949.JPG", "./img/culture/IMG_4961.JPG", "./img/culture/IMG_4962.JPG", "./img/culture/IMG_4973.JPG",  "./img/culture/IMG_4779.JPG", "./img/culture/IMG_4776.JPG", "./img/culture/IMG_4769.JPG", "./img/culture/IMG_4755.JPG", "./img/culture/IMG_4749.JPG",
         ]}
       />
       <PageBottom img="./img/ecology/IMG_5133.JPG" />
