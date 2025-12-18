@@ -39,7 +39,15 @@ const Ecology = () => {
         attractions={{
           locations: "社頂公園、水蛙窟",
         }}
-        bottomImg={["./img/ecology/UJ-58.jpg", "./img/ecology/UJ-17.jpg", "./img/ecology/JCE_0548-20151124.jpg", "./img/ecology/JCE_7848-20150702.jpg", "./img/ecology/JCE_0543-20151124.jpg", "./img/ecology/JCE_0533-20151124.jpg", "./img/ecology/DSC_6382.jpg",]}
+        bottomImg={[
+          "./img/ecology/UJ-58.jpg",
+          "./img/ecology/UJ-17.jpg",
+          "./img/ecology/JCE_0548-20151124.jpg",
+          "./img/ecology/JCE_7848-20150702.jpg",
+          "./img/ecology/JCE_0543-20151124.jpg",
+          "./img/ecology/JCE_0533-20151124.jpg",
+          "./img/ecology/DSC_6382.jpg",
+        ]}
       />
       <PartRight
         id="ocean"
@@ -54,7 +62,11 @@ const Ecology = () => {
         attractions={{
           locations: "後壁湖潮間帶、南灣",
         }}
-        bottomImg={["./img/ecology/JCE_0477-20151107.jpg", "./img/ecology/JCE_0481-20151107.jpg" , "./img/ecology/JCE_3801.jpg"]}
+        bottomImg={[
+          "./img/ecology/JCE_0477-20151107.jpg",
+          "./img/ecology/JCE_0481-20151107.jpg",
+          "./img/ecology/JCE_3801.jpg",
+        ]}
       />
       <PartLeft
         id="air"
@@ -65,14 +77,22 @@ const Ecology = () => {
           "恆春半島的天空，是一條古老而壯闊的生命航線，充滿了鳥類遷徙故事。",
           "每年秋季，數以萬計的赤腹鷹和灰面鵟鷹，沿著固定的路徑抵達恆春。牠們巧妙地利用落山風和上升熱氣流，在空中形成震撼的遷徙場景，展現跨越數千公里的南遷之旅。這些猛禽在白天高飛穿越半島上空，而在半島中央，被譽為水鳥天堂的龍鑾潭，則迎接著另一批嬌客。",
           "龍鑾潭在冬季是大量雁鴨科候鳥南下度冬的重要棲息地，每年吸引數千隻鳳頭潛鴨、小水鴨等水鳥群聚，與天空中過境的景觀，共同構築了恆春半島豐富的鳥類生態。",
-          "白日的鷹群飛過，傍晚時刻關山則上演著另一場光影盛宴。夕陽緩緩沉入海平面，將天空染成一片金色。到了夜晚，站在龍磐一望無際的草原上，頭頂的星空浩瀚無垠，讓恆春多了一幅畫。恆春的空域，是風、光、生命的忠實體現。"
+          "白日的鷹群飛過，傍晚時刻關山則上演著另一場光影盛宴。夕陽緩緩沉入海平面，將天空染成一片金色。到了夜晚，站在龍磐一望無際的草原上，頭頂的星空浩瀚無垠，讓恆春多了一幅畫。恆春的空域，是風、光、生命的忠實體現。",
         ]}
         attractions={{
           locations: "龍鑾潭、關山、龍磐公園",
         }}
-        bottomImg={["./img/ecology/000_3523.jpg", "./img/ecology/000_3530-1.jpg" , "./img/ecology/000_3530-1.jpg" , "./img/ecology/000_3530.jpg" , "./img/ecology/000_4702-20190724.jpg" , "./img/ecology/JCE_1743.jpg", "./img/ecology/JCE_1790.jpg"]}
+        bottomImg={[
+          "./img/ecology/000_3523.jpg",
+          "./img/ecology/000_3530-1.jpg",
+          "./img/ecology/000_3530-1.jpg",
+          "./img/ecology/000_3530.jpg",
+          "./img/ecology/000_4702-20190724.jpg",
+          "./img/ecology/JCE_1743.jpg",
+          "./img/ecology/JCE_1790.jpg",
+        ]}
       />
-      <PageBottom img="./img/ecology/IMG_5133.JPG" />
+      <PageBottom img="./IMG_5133.JPG" />
       <BackToTopButton />
     </div>
   );

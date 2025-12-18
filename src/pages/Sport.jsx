@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Header2 from "../layouts/land/Header2";
 import BackToTopButton from "../components/BackToTopButton";
 import Outline from "../layouts/land/Outline";
@@ -7,7 +7,6 @@ import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
 
 import PageBottom from "../layouts/land/PageBottom";
-
 
 const Sport = () => {
   return (
@@ -37,9 +36,19 @@ const Sport = () => {
         paragraphs={[
           "「潛入海底，與海龜共享一片寧靜。」",
           "恆春不僅是台灣最南端的城市，也是最適合運動的地方；剛好的溫度、剛好的天氣，最容易激起運動欲。",
-          ["潛水：後壁湖、萬里桐是潛水勝地，能近距離觀察珊瑚礁。","獨木舟：只靠槳聲和浪花，把自由感收入心中。","風帆/風箏衝浪：在落山風季節，感受到與風的追逐。","海洋運動是恆春人最引以為傲的自由。"],
+          [
+            "潛水：後壁湖、萬里桐是潛水勝地，能近距離觀察珊瑚礁。",
+            "獨木舟：只靠槳聲和浪花，把自由感收入心中。",
+            "風帆/風箏衝浪：在落山風季節，感受到與風的追逐。",
+            "海洋運動是恆春人最引以為傲的自由。",
+          ],
         ]}
-        bottomImg={["./img/sport/000_4606-20190721.jpg", "./img/sport/000_4617-20190721.jpg" , "./img/sport/000_4627-20190721.jpg","./img/sport/000_4635-20190721.jpg"]}
+        bottomImg={[
+          "./img/sport/000_4606-20190721.jpg",
+          "./img/sport/000_4617-20190721.jpg",
+          "./img/sport/000_4627-20190721.jpg",
+          "./img/sport/000_4635-20190721.jpg",
+        ]}
       />
       <PartRight
         id="land"
@@ -49,14 +58,30 @@ const Sport = () => {
         paragraphs={[
           "「用慢速的方式，漫遊半島風情。」",
           "恆春的天氣與地理環境，有許多適合單車、越野和慢跑的路線",
-          ["單車：環龍鑾潭或沿著屏鵝公路的慢車道。","越野：挑戰社頂公園的林道或龍磐公園的草原。","慢跑：古城牆內或海邊沙灘，都是感受南國氣味的絕佳場域。"],
+          [
+            "單車：環龍鑾潭或沿著屏鵝公路的慢車道。",
+            "越野：挑戰社頂公園的林道或龍磐公園的草原。",
+            "慢跑：古城牆內或海邊沙灘，都是感受南國氣味的絕佳場域。",
+          ],
         ]}
-        bottomImg={["./img/sport/IMG_4565.JPG", "./img/sport/IMG_4566.JPG", "./img/sport/IMG_4567.JPG", "./img/sport/IMG_4575.JPG", "./img/sport/IMG_4576.JPG", "./img/sport/IMG_4581.JPG", "./img/sport/IMG_4579.JPG", "./img/sport/IMG_4595.JPG", "./img/sport/IMG_4594.JPG", "./img/sport/IMG_4593.JPG", "./img/sport/IMG_4580.JPG",]}
+        bottomImg={[
+          "./img/sport/IMG_4565.JPG",
+          "./img/sport/IMG_4566.JPG",
+          "./img/sport/IMG_4567.JPG",
+          "./img/sport/IMG_4575.JPG",
+          "./img/sport/IMG_4576.JPG",
+          "./img/sport/IMG_4581.JPG",
+          "./img/sport/IMG_4579.JPG",
+          "./img/sport/IMG_4595.JPG",
+          "./img/sport/IMG_4594.JPG",
+          "./img/sport/IMG_4593.JPG",
+          "./img/sport/IMG_4580.JPG",
+        ]}
       />
-      <PageBottom img="./img/ecology/IMG_5133.JPG" />
+      <PageBottom img="./IMG_5133.JPG" />
       <BackToTopButton />
     </div>
-  )
-}
+  );
+};
 
-export default Sport
+export default Sport;

@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 import Header2 from "../layouts/land/Header2";
 import BackToTopButton from "../components/BackToTopButton";
 import Outline from "../layouts/land/Outline";
 
 import PageBottom from "../layouts/land/PageBottom";
-
 
 const Move = () => {
   return (
@@ -27,10 +26,10 @@ const Move = () => {
         ]}
       />
 
-      <PageBottom img="./img/ecology/IMG_5133.JPG" />
+      <PageBottom img="./IMG_5133.JPG" />
       <BackToTopButton />
     </div>
-  )
-}
+  );
+};
 
-export default Move
+export default Move;

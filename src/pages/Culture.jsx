@@ -44,7 +44,12 @@ const Culture = () => {
           ],
         ]}
         bottomImg={[
-          "./img/culture/IMG_4435.JPG", "./img/culture/IMG_4461.JPG", "./img/culture/IMG_4467.JPG", "./img/culture/IMG_4484.JPG", "./img/culture/IMG_4495.JPG", "./img/culture/IMG_4493.JPG",
+          "./img/culture/IMG_4435.JPG",
+          "./img/culture/IMG_4461.JPG",
+          "./img/culture/IMG_4467.JPG",
+          "./img/culture/IMG_4484.JPG",
+          "./img/culture/IMG_4495.JPG",
+          "./img/culture/IMG_4493.JPG",
         ]}
       />
       <PartRight
@@ -61,7 +66,17 @@ const Culture = () => {
             "月琴：恆春民謠主要伴奏樂器，音色哀婉，具地區象徵性。",
           ],
         ]}
-        bottomImg={["./img/culture/IMG_4861.JPG", "./img/culture/IMG_4871.JPG", "./img/culture/IMG_4873.JPG", "./img/culture/IMG_4875.JPG", "./img/culture/IMG_4880.JPG", "./img/culture/IMG_4883.JPG", "./img/culture/IMG_4884.JPG", "./img/culture/IMG_4885.JPG", "./img/culture/IMG_4889.JPG", "./img/culture/IMG_4910.JPG",
+        bottomImg={[
+          "./img/culture/IMG_4861.JPG",
+          "./img/culture/IMG_4871.JPG",
+          "./img/culture/IMG_4873.JPG",
+          "./img/culture/IMG_4875.JPG",
+          "./img/culture/IMG_4880.JPG",
+          "./img/culture/IMG_4883.JPG",
+          "./img/culture/IMG_4884.JPG",
+          "./img/culture/IMG_4885.JPG",
+          "./img/culture/IMG_4889.JPG",
+          "./img/culture/IMG_4910.JPG",
         ]}
       />
       <PartLeft
@@ -79,7 +94,19 @@ const Culture = () => {
           ],
         ]}
         bottomImg={[
-          "./img/culture/IMG_4444.JPG", "./img/culture/IMG_4445.JPG", "./img/culture/IMG_4486.JPG", "./img/culture/IMG_4500.JPG","./img/culture/IMG_4216.JPG", "./img/culture/IMG_4252.JPG", "./img/culture/IMG_4254.JPG", "./img/culture/IMG_4344.JPG", "./img/culture/IMG_4325.JPG", "./img/culture/IMG_4311.JPG", "./img/culture/IMG_4307.JPG", "./img/culture/IMG_4278.JPG", "./img/culture/IMG_4279.JPG",
+          "./img/culture/IMG_4444.JPG",
+          "./img/culture/IMG_4445.JPG",
+          "./img/culture/IMG_4486.JPG",
+          "./img/culture/IMG_4500.JPG",
+          "./img/culture/IMG_4216.JPG",
+          "./img/culture/IMG_4252.JPG",
+          "./img/culture/IMG_4254.JPG",
+          "./img/culture/IMG_4344.JPG",
+          "./img/culture/IMG_4325.JPG",
+          "./img/culture/IMG_4311.JPG",
+          "./img/culture/IMG_4307.JPG",
+          "./img/culture/IMG_4278.JPG",
+          "./img/culture/IMG_4279.JPG",
         ]}
       />
       <PartRight
@@ -96,10 +123,20 @@ const Culture = () => {
           ],
         ]}
         bottomImg={[
-          "./img/culture/IMG_4916.JPG", "./img/culture/IMG_4932.JPG", "./img/culture/IMG_4949.JPG", "./img/culture/IMG_4961.JPG", "./img/culture/IMG_4962.JPG", "./img/culture/IMG_4973.JPG",  "./img/culture/IMG_4779.JPG", "./img/culture/IMG_4776.JPG", "./img/culture/IMG_4769.JPG", "./img/culture/IMG_4755.JPG", "./img/culture/IMG_4749.JPG",
+          "./img/culture/IMG_4916.JPG",
+          "./img/culture/IMG_4932.JPG",
+          "./img/culture/IMG_4949.JPG",
+          "./img/culture/IMG_4961.JPG",
+          "./img/culture/IMG_4962.JPG",
+          "./img/culture/IMG_4973.JPG",
+          "./img/culture/IMG_4779.JPG",
+          "./img/culture/IMG_4776.JPG",
+          "./img/culture/IMG_4769.JPG",
+          "./img/culture/IMG_4755.JPG",
+          "./img/culture/IMG_4749.JPG",
         ]}
       />
-      <PageBottom img="./img/ecology/IMG_5133.JPG" />
+      <PageBottom img="./IMG_5133.JPG" />
       <BackToTopButton />
     </div>
   );
