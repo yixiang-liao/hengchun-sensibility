@@ -4,13 +4,13 @@ import os
 ROOT_DIR = "."
 
 # === 條件設定 ===
-MIN_SIZE_KB = 300        # 只壓縮超過這個大小的圖片
+MIN_SIZE_KB = 500        # 只壓縮超過這個大小的圖片
 MAX_WIDTH = 1920         # 最大寬度
 JPEG_QUALITY = 80
 WEBP_QUALITY = 80
 PNG_COMPRESS_LEVEL = 9
 
-SUPPORTED_EXT = (".jpg", ".jpeg", ".png", ".webp")
+SUPPORTED_EXT = (".jpg", ".jpeg")
 
 
 def compress_image(path):
@@ -38,13 +38,6 @@ def compress_image(path):
                     quality=JPEG_QUALITY,
                     optimize=True,
                     progressive=True
-                )
-
-            elif ext == ".png":
-                img.save(
-                    path,
-                    optimize=True,
-                    compress_level=PNG_COMPRESS_LEVEL
                 )
 
             elif ext == ".webp":
