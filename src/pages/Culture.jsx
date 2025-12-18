@@ -84,7 +84,7 @@ const Culture = () => {
       />
       <PartRight
         id="youth-innovation"
-        image="./img/culture/IMG_4762.JPG"
+        image="./img/culture/IMG_4962.JPG"
         title="青創浪潮"
         subtitle="歷史的文化新生命"
         paragraphs={[
