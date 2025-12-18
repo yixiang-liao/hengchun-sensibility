@@ -18,6 +18,9 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ```
 find . -name "._*" -delete
+cd ./public/img/
+python3 ./zipimg.py
+cd ../../
 git init
 git add .
 git commit -m "first commit"
