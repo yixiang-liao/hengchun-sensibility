@@ -92,11 +92,54 @@
   }
 }
 
+/* ⭐ 大桌機 / 2K / 4K 螢幕 */
 @media (min-width: 1920px) {
-  /* 給大桌機 + 4K / 2K 螢幕 */
   .outline {
+    padding: 0 8vw; // 不要貼邊，保留呼吸感
+
+    .outline1 {
+      width: 60%;        // 原本 70% → 大螢幕縮一點更好看
+      max-width: 1200px; // 上限，避免太散
+      margin-top: 8rem;
+      gap: 2rem;
+
+      .outline_title {
+        .icon {
+          width: 72px; // 稍微放大
+        }
+
+        .text {
+          font-size: 1.35rem;
+          letter-spacing: 0.05em;
+        }
+      }
+
+      .line {
+        height: 3px; // 視覺重量稍微增加
+      }
+
+      .outline-content {
+        font-size: 1.35rem;
+        line-height: 2.4rem;
+        padding: 0 1rem;
+
+        button {
+          font-size: 1.25rem;
+          padding: 0.4rem 0.8rem;
+          border-radius: 4px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #d1421c;
+            color: #fff;
+            transform: translateY(-1px); // 很輕的動態
+          }
+        }
+      }
+    }
   }
 }
+
 
 /* ⭐ 一般筆電（Mac、Windows 14~15吋） */
 @media (min-width: 1211px) and (max-width: 1600px) {

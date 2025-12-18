@@ -73,7 +73,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/move" onClick={() => setIsOpen(false)}>
-            移居半島
+            宜居半島
           </Link>
         </li>
         <li>

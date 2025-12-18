@@ -39,7 +39,7 @@ const Ecology = () => {
         attractions={{
           locations: "社頂公園、水蛙窟",
         }}
-        bottomImg={["./img/ecology/JCE_0477-20151107.jpg", "./img/ecology/JCE_0481-20151107.jpg" , "./img/ecology/JCE_3801.jpg"]}
+        bottomImg={["./img/ecology/UJ-58.jpg", "./img/ecology/UJ-17.jpg", "./img/ecology/JCE_0548-20151124.jpg", "./img/ecology/JCE_7848-20150702.jpg", "./img/ecology/JCE_0543-20151124.jpg", "./img/ecology/JCE_0533-20151124.jpg", "./img/ecology/DSC_6382.jpg",]}
       />
       <PartRight
         id="ocean"

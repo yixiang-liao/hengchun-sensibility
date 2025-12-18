@@ -30,9 +30,21 @@ const PartLeft = ({
 
           <div className="description">
             {/* ⭐ 用陣列 render 敘述段落 */}
-            {paragraphs.map((text, index) => (
-              <p key={index}>{text}</p>
-            ))}
+            {paragraphs.map((item, index) => {
+              // 如果是陣列 → 列點
+              if (Array.isArray(item)) {
+                return (
+                  <ul className="description-list" key={index}>
+                    {item.map((li, liIndex) => (
+                      <li key={liIndex}>{li}</li>
+                    ))}
+                  </ul>
+                );
+              }
+
+              // 否則就是一般段落
+              return <p key={index}>{item}</p>;
+            })}
 
             {/* 精選景點（可選） */}
             {attractions && (

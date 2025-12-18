@@ -462,6 +462,7 @@ html {
 .inner-pages .block .img_group img {
   width: 500px;
   height: auto;
+  border-radius: 0.5rem;
 }
 .inner-pages .content {
   display: flex;
@@ -476,6 +477,9 @@ html {
 .inner-pages .inner_p {
   font-size: 1.2rem;
   text-align: justify;
+  line-height: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
 }
 .inner-pages .grid-container {
   display: flex;
@@ -584,6 +588,7 @@ html {
   height: 300px;
   overflow: hidden;
   position: relative;
+  border-radius: 0.5rem;
 }
 .header2 .header-img img {
   width: 100%;
@@ -761,8 +766,43 @@ html {
     gap: 1rem;
   }
 }
+/* ⭐ 大桌機 / 2K / 4K 螢幕 */
 @media (min-width: 1920px) {
-  /* 給大桌機 + 4K / 2K 螢幕 */
+  .outline {
+    padding: 0 8vw;
+  }
+  .outline .outline1 {
+    width: 60%;
+    max-width: 1200px;
+    margin-top: 8rem;
+    gap: 2rem;
+  }
+  .outline .outline1 .outline_title .icon {
+    width: 72px;
+  }
+  .outline .outline1 .outline_title .text {
+    font-size: 1.35rem;
+    letter-spacing: 0.05em;
+  }
+  .outline .outline1 .line {
+    height: 3px;
+  }
+  .outline .outline1 .outline-content {
+    font-size: 1.35rem;
+    line-height: 2.4rem;
+    padding: 0 1rem;
+  }
+  .outline .outline1 .outline-content button {
+    font-size: 1.25rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .outline .outline1 .outline-content button:hover {
+    background-color: #d1421c;
+    color: #fff;
+    transform: translateY(-1px);
+  }
 }
 /* ⭐ 一般筆電（Mac、Windows 14~15吋） */
 @media (min-width: 1211px) and (max-width: 1600px) {
@@ -811,6 +851,7 @@ html {
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
+  border-radius: 0.5rem;
 }
 .part-left .top-part .top-img img {
   width: 100%;
@@ -856,6 +897,17 @@ html {
   line-height: 1.5rem;
   font-weight: 300;
 }
+.part-left .top-part .top-text .description .description-list {
+  margin: 0.5rem 0 1.2rem 1.2rem;
+  padding: 0;
+  list-style: disc;
+}
+.part-left .top-part .top-text .description .description-list li {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
 .part-left .top-part .top-text .description .attractions {
   margin-top: 1rem;
   font-size: 1rem;
@@ -887,6 +939,7 @@ html {
   height: 200px;
   overflow: hidden;
   position: relative;
+  border-radius: 1rem;
 }
 .part-left .bottom-part .bottom-img img {
   width: 100%;
@@ -1074,37 +1127,178 @@ html {
   }
 }
 /* =========================
-   27 吋以上（≥ 1920px）
+   大螢幕優化 (≥ 1211px) 
+   包含原本的 1920px 邏輯修正
    ========================= */
-@media (min-width: 1920px) {
-  .part-right .top-part {
-    gap: 3rem;
+@media (min-width: 1211px) {
+  .part-left {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .part-right .top-part .top-img {
-    width: 420px;
+  .part-left .top-part .top-text {
+    flex: 1;
+    padding-left: 2rem;
   }
-  .part-right .top-part .top-text {
-    max-width: 900px;
-  }
-  .part-right .top-part .top-text .top-title h2 {
-    font-size: 1.7rem;
-  }
-  .part-right .top-part .top-text .top-title p {
-    font-size: 1.05rem;
-  }
-  .part-right .top-part .top-text .description p {
-    font-size: 1.05rem;
-    line-height: 1.8rem;
-  }
-  .part-right .top-part .top-text .description .attractions {
-    font-size: 1.05rem;
-  }
-  .part-right .bottom-part {
-    gap: 2.5rem;
+  .part-left .bottom-part {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
     margin-top: 3rem;
   }
-  .part-right .bottom-part .bottom-img {
-    width: 420px;
-    height: 240px;
+  .part-left .bottom-part .bottom-img {
+    flex: 1;
+    width: auto;
+    height: 250px;
+  }
+}
+/* =========================
+   2K / 4K 螢幕 (≥ 1920px)
+   ========================= */
+@media (min-width: 1920px) {
+  .part-left {
+    max-width: 1600px;
+    padding: 0 5rem;
+    margin-top: 8rem;
+  }
+  .part-left .top-part {
+    gap: 4rem;
+  }
+  .part-left .top-part .top-text .top-title h2 {
+    font-size: 2rem;
+  }
+  .part-left .top-part .top-text .top-title p {
+    font-size: 1.2rem;
+  }
+  .part-left .top-part .top-text .description p, .part-left .top-part .top-text .description li {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  .part-left .bottom-part {
+    gap: 2rem;
+  }
+  .part-left .bottom-part .bottom-img {
+    height: 300px;
+  }
+}
+.bottom-gallery {
+  position: relative;
+  max-width: 90%;
+  margin-top: 3rem;
+}
+.bottom-gallery .gallery-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+  /* 隱藏 scrollbar（保留滑動功能） */
+  scrollbar-width: none;
+}
+.bottom-gallery .gallery-track::-webkit-scrollbar {
+  display: none;
+}
+.bottom-gallery .gallery-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.bottom-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.bottom-gallery .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0);
+  color: rgb(140, 127, 127);
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.bottom-gallery .arrow.left {
+  left: -2rem;
+}
+.bottom-gallery .arrow.right {
+  right: -2rem;
+}
+
+/* ===== 點擊展示（Lightbox） ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+.lightbox .close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.lightbox .close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1023px) {
+  .bottom-gallery .gallery-item {
+    width: 180px;
+    height: 120px;
+  }
+  .bottom-gallery .arrow.left {
+    left: -1rem;
+  }
+  .bottom-gallery .arrow.right {
+    right: -1rem;
+  }
+}
+@media (max-width: 767px) {
+  .bottom-gallery {
+    margin-top: 2rem;
+  }
+  .bottom-gallery .gallery-track {
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+  .bottom-gallery .gallery-item {
+    width: 70vw;
+    height: 45vw;
+    max-width: 320px;
+    max-height: 200px;
+  }
+  .bottom-gallery .arrow {
+    display: none;
+  }
+}
+/* 手機：關閉鍵往內、避免被瀏海吃掉 */
+@media (max-width: 767px) {
+  .lightbox .close {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

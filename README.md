@@ -17,6 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ```
+find . -name "._*" -delete
 git init
 git add .
 git commit -m "first commit"
