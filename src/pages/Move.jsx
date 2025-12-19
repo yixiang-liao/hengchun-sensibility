@@ -6,6 +6,7 @@ import Outline from "../layouts/land/Outline";
 import Intro from "../layouts/land/move/Intro";
 import VisitorsLeft from "../layouts/land/move/VisitorsLeft";
 import VisitorsRight from "../layouts/land/move/VisitorsRight";
+import Traveler from "../layouts/land/move/Traveler";
 
 import PageBottom from "../layouts/land/PageBottom";
 
@@ -123,6 +124,14 @@ const Move = () => {
         ]}
         bottomImg="./img/move/IMG_5001.JPG"
       />
+      <Traveler
+        title="攝影師 林育鋒"
+        paragraphs={[
+          "他是從台北搬到恆春的攝影師，因為喜歡這裡的光與風。他說恆春的光線特別柔和，能讓人放鬆心情、專注於當下。他喜歡在海邊散步、在巷弄中尋找靈感，並用相機捕捉這些美好的瞬間。",
+          "對他而言，恆春是一個能讓人重新找回自我的地方。在這裡，他感受到生活的節奏變得緩慢而有意義，每一天都充滿了新的發現與感動。",
+        ]}
+      />
+
       <Intro
         id="conclusion"
         title="結語"
