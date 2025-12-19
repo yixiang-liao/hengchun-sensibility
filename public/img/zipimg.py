@@ -16,7 +16,6 @@ SUPPORTED_EXT = (".jpg", ".jpeg")
 def compress_image(path):
     ext = os.path.splitext(path)[1].lower()
 
-    # === 檔案大小判斷 ===
     size_kb = os.path.getsize(path) / 1024
     if size_kb < MIN_SIZE_KB:
         print(f"↪ 跳過（{int(size_kb)}KB）：{path}")
@@ -24,13 +23,15 @@ def compress_image(path):
 
     try:
         with Image.open(path) as img:
-            # === 等比例縮放 ===
-            if img.width > MAX_WIDTH:
-                ratio = MAX_WIDTH / img.width
-                new_size = (MAX_WIDTH, int(img.height * ratio))
+            w, h = img.size
+
+            # ✅ 只限制「長邊」，避免直圖變橫感
+            max_side = max(w, h)
+            if max_side > MAX_WIDTH:
+                ratio = MAX_WIDTH / max_side
+                new_size = (int(w * ratio), int(h * ratio))
                 img = img.resize(new_size, Image.LANCZOS)
 
-            # === 依原格式壓縮 ===
             if ext in (".jpg", ".jpeg"):
                 img = img.convert("RGB")
                 img.save(
@@ -40,17 +41,11 @@ def compress_image(path):
                     progressive=True
                 )
 
-            elif ext == ".webp":
-                img.save(
-                    path,
-                    quality=WEBP_QUALITY,
-                    method=6
-                )
-
             print(f"✔ 壓縮完成（{int(size_kb)}KB）：{path}")
 
     except Exception as e:
         print(f"✖ 失敗：{path} | {e}")
+
 
 
 def run():
