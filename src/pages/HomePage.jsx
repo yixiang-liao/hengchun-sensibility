@@ -24,7 +24,7 @@ const HomePage = () => {
             /> */}
             <img
               className="msg_in_bottle glow"
-              src="./img/homepage/msg_in_Bottle.png"
+              src="./icon/msg_in_Bottle.png"
               onClick={() => setShowLetter(true)}
               style={{ cursor: "pointer" }}
             />
@@ -45,7 +45,7 @@ const HomePage = () => {
             className="sun-illustration"
           /> */}
           <img
-            src="./img/homepage/web_arrow_w.png"
+            src="./icon/web_arrow_w.png"
             alt="Illustration"
             className="sun-illustration"
           />

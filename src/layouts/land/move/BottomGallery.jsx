@@ -90,7 +90,7 @@ const BottomGallery = ({ images = [] }) => {
       {/* =========================
           底部橫向 Gallery
           ========================= */}
-      <div className="bottom-gallery">
+      <div className="bottom-gallery-move">
         {canScrollLeft && (
           <button
             className="arrow left"

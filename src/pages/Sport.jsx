@@ -14,14 +14,14 @@ const Sport = () => {
       <Header2
         title="運動半島"
         subtitle="與自然共振的自由"
-        icon_img="./img/ecology/ecology_icon.png"
+        icon_img="./icon/ecology_icon.png"
         bgImage="./img/sport/000_4635-20190721.jpg"
         description1="將大自然作為你的專屬健身房。"
         description2="恆春半島就是一座天然的運動場。在這裡，運動不是非得在健身房裡揮汗，而是跟著身體去旅行，將自然作為活動場域。從水上活動到山林越野，恆春的自由感，是透過身體與風、海、土地共振而感受到的。"
       />
       <Outline
         title="運動半島"
-        icon="./img/ecology/ecology_icon.png"
+        icon="./icon/ecology_icon.png"
         items={[
           { id: "waters", label: "水域活動" },
           { id: "land", label: "陸域活動" },

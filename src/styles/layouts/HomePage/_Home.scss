@@ -189,7 +189,7 @@
     }
   }
   .popup-img {
-    max-width: 300px;
+    width: 300px;
   }
 }
 
@@ -221,4 +221,12 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+@media (min-width: 1920px) {
+  /* 給大桌機 + 4K / 2K 螢幕 */
+.popup-img {
+  // width: 70%;
+  max-width: 1000px;
+}
 }

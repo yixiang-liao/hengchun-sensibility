@@ -14,14 +14,14 @@ const Culture = () => {
       <Header2
         title="文化半島"
         subtitle="生活累積的厚度"
-        icon_img="./img/ecology/ecology_icon.png"
+        icon_img="./icon/ecology_icon.png"
         bgImage="./img/ecology/IMG_5008.JPG"
         description1="這裡的生活，比歷史更耐人尋味。"
         description2="恆春的文化，不是博物館裡的靜態展品，而是生活長年累積的厚度。從清代的古城牆、充滿社交意義的「吃大麵」文化，到每年落山風藝術季。這裡的文化是活的，它存在於老街的氣味、古城的巷弄、以及每一位在地居民的故事裡。"
       />
       <Outline
         title="文化半島"
-        icon="./img/ecology/ecology_icon.png"
+        icon="./icon/ecology_icon.png"
         items={[
           { id: "ancient-city", label: "古城輪廓" },
           { id: "local-language", label: "在地語言" },
