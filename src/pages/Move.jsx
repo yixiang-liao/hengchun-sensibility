@@ -66,7 +66,7 @@ const Move = () => {
           "在恆春生活十二年的他，把每天過得像是與小鎮同步呼吸。早晨上頂樓照顧花園，中午與太太吃飯，下午看風與心情備料、運動或休息，晚上開店。他把「恆春味」形容為海的鹹、山的草本與風的自然味，因此調酒中常加入帶海氣的「港口茶」。",
           "十二年的生活讓他明白：恆春不會急、也不會變太快。店家開了又關，是這座小鎮的節奏。他只是順著風留下來，也因此真正把恆春當成家。",
         ]}
-        bottomImg={["./img/move/IMG_4742.JPG", "./img/move/IMG_0917.JPG", "./img/move/IMG_4560.JPG", "./img/move/IMG_4555.JPG", "./img/move/IMG_4539.JPG", "./img/move/IMG_4532.JPG", "./img/move/IMG_4534.JPG", "./img/move/IMG_4538.JPG", "./img/move/IMG_4537.JPG"
+        bottomImg={["./img/move/IMG_4560.JPG", "./img/move/IMG_4555.JPG", "./img/move/IMG_4539.JPG", "./img/move/IMG_4532.JPG", "./img/move/IMG_4534.JPG", "./img/move/IMG_4538.JPG", "./img/move/IMG_4537.JPG"
         ]}
       />
 
