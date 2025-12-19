@@ -144,29 +144,59 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* =========================
+     Bottom Gallery（Tablet）
+     ========================= */
   .bottom-gallery-move {
-  margin-top: 0rem;
+    width: 100%;            // ⭐ 解除 950px
+    margin-top: 1.5rem;
+    padding: 0;             // 不推擠外框
+
+    .gallery-track {
+      padding: 0 2rem;      // ⭐ 平板需要一點留白
+      gap: 1.25rem;
+    }
+
     .gallery-item {
-      width: 180px;
-      height: 120px;
+      flex: 0 0 auto;
+
+      width: 200px;         // ⭐ 平板穩定尺寸
+      height: 130px;
+
+      border-radius: 0.6rem;
     }
 
-    .arrow.left {
-      left: -1rem;
-    }
+    .arrow {
+      &.left {
+        left: 0.5rem;       // ⭐ 不再跑到外面
+      }
 
-    .arrow.right {
-      right: -1rem;
+      &.right {
+        right: 0.5rem;
+      }
     }
-    
   }
+
+  /* =========================
+     Lightbox（Tablet）
+     ========================= */
   .lightbox {
+    img {
+      max-width: 88vw;
+      max-height: 82vh;
+    }
+
     .nav {
       font-size: 2rem;
     }
+
+    .counter {
+      font-size: 0.85rem;
+    }
   }
 }
+
 
 @media (max-width: 767px) {
   /* =========================

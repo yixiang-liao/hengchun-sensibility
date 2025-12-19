@@ -1,3 +1,68 @@
 .traveler{
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 0;
+  .traveler-content {
+    --content-width: 850px;
+    width: var(--content-width);
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+      }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1210px) {
+  .traveler {
+    margin: 2.5rem 0;
+
+    .traveler-content {
+      width: 100%;
+      padding: 0 4rem; // ⭐ 跟你其他 section 一致
+
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .traveler {
+    margin: 2rem 0;
+
+    .traveler-content {
+      width: 100%;
+      padding: 0 1.5rem;
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+        letter-spacing: 0.05rem;
+        text-align: left; // ⭐ 手機一定不要 justify
+      }
+    }
+  }
 }

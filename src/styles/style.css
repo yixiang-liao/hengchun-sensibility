@@ -1350,7 +1350,7 @@ html {
    Intro
    ========================= */
 .intro {
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding: 0 10rem;
   width: 100%;
   display: flex;
@@ -1746,22 +1746,43 @@ html {
   opacity: 0.7;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* =========================
+     Bottom Gallery（Tablet）
+     ========================= */
   .bottom-gallery-move {
-    margin-top: 0rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+  .bottom-gallery-move .gallery-track {
+    padding: 0 2rem;
+    gap: 1.25rem;
   }
   .bottom-gallery-move .gallery-item {
-    width: 180px;
-    height: 120px;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 130px;
+    border-radius: 0.6rem;
   }
   .bottom-gallery-move .arrow.left {
-    left: -1rem;
+    left: 0.5rem;
   }
   .bottom-gallery-move .arrow.right {
-    right: -1rem;
+    right: 0.5rem;
+  }
+  /* =========================
+     Lightbox（Tablet）
+     ========================= */
+  .lightbox img {
+    max-width: 88vw;
+    max-height: 82vh;
   }
   .lightbox .nav {
     font-size: 2rem;
+  }
+  .lightbox .counter {
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 767px) {
@@ -1816,5 +1837,66 @@ html {
   }
   .lightbox .counter {
     font-size: 0.75rem;
+  }
+}
+.traveler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 0;
+}
+.traveler .traveler-content {
+  --content-width: 850px;
+  width: var(--content-width);
+}
+.traveler .traveler-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.traveler .traveler-content p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+@media (min-width: 769px) and (max-width: 1210px) {
+  .traveler {
+    margin: 2.5rem 0;
+  }
+  .traveler .traveler-content {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .traveler .traveler-content h3 {
+    font-size: 1.4rem;
+  }
+  .traveler .traveler-content p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .traveler {
+    margin: 2rem 0;
+  }
+  .traveler .traveler-content {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .traveler .traveler-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+  .traveler .traveler-content p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */
