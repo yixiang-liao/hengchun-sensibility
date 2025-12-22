@@ -1,5 +1,36 @@
 .inner-pages {
   margin: 2rem 8rem;
+  /* ===== 致謝區塊 ===== */
+.block.acknowledgements {
+  margin: 6rem 0 8rem;
+  text-align: center;
+
+  .content {
+    max-width: 900px;     // 讓文字像書頁
+    margin: 0 auto;
+    display: block;       // 覆蓋你原本 flex
+  }
+
+  .inner_p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.12rem;
+    font-weight: 300;
+    text-align: center;   // 致謝用置中
+    margin: 1.2rem 0;
+    color: #222;
+  }
+  .ack-title {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  color: #555;
+}
+
+}
+
   .block {
     margin: 4rem 0;
     .img_group{
@@ -17,6 +48,19 @@
       }
     }
   }
+  .land5 {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+
+  img {
+    width: auto;      // 原始尺寸
+    height: auto;
+    max-width: none;
+  }
+}
+
+
   .content {
     display: flex;
     justify-content: center;
@@ -136,6 +180,51 @@
   .inner-pages {
     .content {
       flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .land5 {
+    padding: 2.5rem 0;
+
+    img {
+      width: 720px;   // ⭐ 固定寬度（平板）
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .land5 {
+    padding: 2rem 0;
+
+    img {
+      width: 320px !important;   // ⭐ 固定寬度（手機）
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .block.acknowledgements {
+    margin: 5rem 0 6rem;
+
+    .content {
+      max-width: 700px;
+      padding: 0 1rem;
+    }
+
+    .inner_p {
+      font-size: 1.05rem;
+      line-height: 2.1rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .block.acknowledgements {
+    margin: 4rem 0 5rem;
+
+    .inner_p {
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: 0.08rem;
     }
   }
 }

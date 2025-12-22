@@ -96,6 +96,9 @@ const InnerPages = () => {
             </div>
           </a>
         </div>
+        <div className="land5">
+          <img src="./img/homepage/5land.png" alt="5land" />
+        </div>
       </div>
       <div className="block">
         <Title text="慢下來後才聽得見的聲音" />
@@ -155,6 +158,25 @@ const InnerPages = () => {
             <p className="inner_p">
               如果你準備好與這座半島一起慢下來，恆春會用它的方式接住你。
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="block acknowledgements">
+        <Title text="致謝" />
+        <div className="content">
+          {/* <img src="./img/homepage/IMG_4483.JPG" alt="" /> */}
+          <div>
+            <p className="ack-title">指導單位</p>
+            <p className="inner_p">國家發展委員會</p>
+
+            <p className="ack-title">執行單位</p>
+            <p className="inner_p">綠色覺醒 恆春永續 青年培力工作站</p>
+
+            <p className="ack-title">視覺設計</p>
+            <p className="inner_p">儒家設計專案團隊</p>
+
+            <p className="ack-title">特別感謝</p>
+            <p className="inner_p">紅氣球書屋 /愛RUN騎 / 南懶咖啡 / 30M BAR / 阿伯綠豆饌 / 一芳海苔醬 / 小山東早點 / 吳家中式早餐 / 縣城大麵 / Mangia Pizza / 咱的海產店 / 艸野人綠豆沙 / 夭夭藝文工作室 / <br/>以及每一位居住在恆春的人們</p>
           </div>
         </div>
       </div>

@@ -29,9 +29,11 @@ const Intro = ({ id, title, subtitle, paragraphs, bottomImg }) => {
             })}
           </div>
         </div>
-        <div className="bottom-img">
-          <img src={bottomImg} alt="Intro Bottom" />
-        </div>
+        {bottomImg && (
+          <div className="bottom-img">
+            <img src={bottomImg} alt="Intro Bottom" />
+          </div>
+        )}
       </div>
     </div>
   );

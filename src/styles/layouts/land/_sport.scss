@@ -1,0 +1,28 @@
+.sport, .flavor {
+  .sport_map_container {
+    width: 100%;
+    display: flex;
+    justify-content: center; // 水平置中
+    align-items: center;
+    padding: 2rem 0; // 上下留白，手機不會貼太緊
+  }
+
+  .sport_map {
+    width: 100%;
+    max-width: 900px; // 桌機最大寬度，可自行調
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .sport, .flavor {
+    .sport_map_container {
+      padding: 1.5rem 1rem; // 手機左右留白
+    }
+
+    .sport_map {
+      max-width: 100%; // 手機滿版
+    }
+  }
+}

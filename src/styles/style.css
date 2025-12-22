@@ -453,6 +453,33 @@ html {
 }
 .inner-pages {
   margin: 2rem 8rem;
+  /* ===== 致謝區塊 ===== */
+}
+.inner-pages .block.acknowledgements {
+  margin: 6rem 0 8rem;
+  text-align: center;
+}
+.inner-pages .block.acknowledgements .content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+.inner-pages .block.acknowledgements .inner_p {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.12rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 1.2rem 0;
+  color: #222;
+}
+.inner-pages .block.acknowledgements .ack-title {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  color: #555;
 }
 .inner-pages .block {
   margin: 4rem 0;
@@ -469,6 +496,16 @@ html {
   width: 500px;
   height: auto;
   border-radius: 0.5rem;
+}
+.inner-pages .land5 {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.inner-pages .land5 img {
+  width: auto;
+  height: auto;
+  max-width: none;
 }
 .inner-pages .content {
   display: flex;
@@ -577,6 +614,46 @@ html {
   /* 給大桌機 + 4K / 2K 螢幕 */
   .inner-pages .content {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1024px) {
+  .land5 {
+    padding: 2.5rem 0;
+  }
+  .land5 img {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .land5 {
+    padding: 2rem 0;
+  }
+  .land5 img {
+    width: 320px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .block.acknowledgements {
+    margin: 5rem 0 6rem;
+  }
+  .block.acknowledgements .content {
+    max-width: 700px;
+    padding: 0 1rem;
+  }
+  .block.acknowledgements .inner_p {
+    font-size: 1.05rem;
+    line-height: 2.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .block.acknowledgements {
+    margin: 4rem 0 5rem;
+  }
+  .block.acknowledgements .inner_p {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.08rem;
   }
 }
 .header2 {
@@ -842,6 +919,29 @@ html {
   pointer-events: none;
 }
 
+.sport .sport_map_container, .flavor .sport_map_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.sport .sport_map, .flavor .sport_map {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .sport .sport_map_container, .flavor .sport_map_container {
+    padding: 1.5rem 1rem;
+  }
+  .sport .sport_map, .flavor .sport_map {
+    max-width: 100%;
+  }
+}
 .part-left {
   margin-top: 5rem;
   padding: 0 10rem;
@@ -931,6 +1031,15 @@ html {
 .part-left .top-part .top-text .description .attractions .locations {
   font-weight: 400;
   font-weight: 300;
+}
+.part-left .top-part .top-text .description .attractions .locations .location-item a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.part-left .top-part .top-text .description .attractions .locations .location-item a:hover {
+  border-bottom-color: #d1421c;
+  color: #d1421c;
 }
 .part-left .bottom-part {
   display: flex;
@@ -1078,6 +1187,19 @@ html {
   align-items: flex-start;
   text-align: left;
 }
+.part-right .locations {
+  font-weight: 400;
+  font-weight: 300;
+}
+.part-right .locations .location-item a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.part-right .locations .location-item a:hover {
+  border-bottom-color: #d1421c;
+  color: #d1421c;
+}
 
 /* =========================
    手機版（≤ 768px）
@@ -1177,7 +1299,8 @@ html {
   .part-left .top-part .top-text .top-title p {
     font-size: 1.2rem;
   }
-  .part-left .top-part .top-text .description p, .part-left .top-part .top-text .description li {
+  .part-left .top-part .top-text .description p,
+  .part-left .top-part .top-text .description li {
     font-size: 1.1rem;
     line-height: 2rem;
   }

@@ -87,7 +87,7 @@ const Move = () => {
           "原本來自台南、因疫情而被迫重新調整人生節奏。一次旅行讓她被恆春的自由氣息吸引，決定搬來生活五年。她認為恆春的味道不是在地人獨有，而是由移居者與本地人共同塑造的混合能量音樂人、創作者、咖啡職人，都在這片土地找到步調。",
           "在她眼裡，恆春是一座能讓人工作、生活與自我探索並存的小鎮。她希望更多旅人別只看水上活動，而是深入街巷與社區，因為那裡才藏著恆春真正的生活感。",
         ]}
-        bottomImg={["./img/move/IMG_4785.JPG", "./img/move/IMG_4742.JPG", "./img/move/IMG_0917.JPG", "./img/move/IMG_4792.JPG", "./img/move/IMG_4791.JPG", "./img/move/IMG_4789.JPG", "./img/move/IMG_4783.JPG", "./img/move/IMG_4780.JPG", "./img/move/IMG_4776.JPG", "./img/move/IMG_4769.JPG", "./img/move/IMG_4766.JPG", "./img/move/IMG_4775.JPG"
+        bottomImg={["./img/move/IMG_4785.JPG", "./img/move/IMG_4742.JPG",  "./img/move/IMG_4792.JPG", "./img/move/IMG_4791.JPG", "./img/move/IMG_4783.JPG", "./img/move/IMG_4780.JPG", "./img/move/IMG_4776.JPG", "./img/move/IMG_4769.JPG", "./img/move/IMG_4766.JPG", "./img/move/IMG_4775.JPG"
         ]}
       />
       <VisitorsRight

@@ -6,6 +6,8 @@ import Outline from "../layouts/land/Outline";
 import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
 
+import Intro from "../layouts/land/move/Intro";
+
 import PageBottom from "../layouts/land/PageBottom";
 
 const Sport = () => {
@@ -78,6 +80,16 @@ const Sport = () => {
           "./img/sport/IMG_4580.JPG",
         ]}
       />
+      <Intro
+        id="sport_map"
+        title="運動地點推薦地圖"
+        paragraphs={[
+          "將國境之南的自然美景轉化為天然運動場，地圖規劃從萬里桐、南灣到佳樂水的海域運動熱點，以及串聯龍鑾潭、社頂公園與龍磐大草原的單車及慢跑路線。透過簡潔的設計，引導熱愛冒險的旅人穿梭於山海之間，無論是想潛入蔚藍海洋或是沿著公路御風而行，都能在這座半島上找到最適合釋放能量的專屬角落。",
+        ]}
+      />
+      <div className="sport_map_container">
+        <img className="sport_map" src="./img/sport/sportmap.png" />
+      </div>
       <PageBottom img="./IMG_5133.JPG" />
       <BackToTopButton />
     </div>

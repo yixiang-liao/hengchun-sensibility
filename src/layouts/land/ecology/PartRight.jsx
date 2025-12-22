@@ -7,7 +7,10 @@ const PartRight = ({
   title,
   subtitle,
   paragraphs = [],
-  attractions,
+  attractions = {
+    label: "精選景點：",
+    locations: [],
+  },
   bottomImg = [],
 }) => {
   return (
@@ -37,13 +40,24 @@ const PartRight = ({
               return <p key={index}>{item}</p>;
             })}
 
-            {attractions && (
+            {attractions?.locations?.length > 0 && (
               <div className="attractions">
                 <span className="icon">#</span>
+
                 <span className="highlight">
                   {attractions.label || "精選景點："}
                 </span>
-                <span className="locations">{attractions.locations}</span>
+
+                <span className="locations">
+                  {attractions.locations.map(([name, url], index) => (
+                    <span key={index} className="location-item">
+                      <a href={url} target="_blank" rel="noopener noreferrer">
+                        {name}
+                      </a>
+                      {index < attractions.locations.length - 1 && "、"}
+                    </span>
+                  ))}
+                </span>
               </div>
             )}
           </div>
