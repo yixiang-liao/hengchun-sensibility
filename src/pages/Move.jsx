@@ -20,6 +20,9 @@ const Move = () => {
         bgImage="./img/move/IMG_4926.JPG"
         description1="在享受海風的同時，生活也能獲得安心的守護。"
         description2="移居恆春，不只是追求浪漫的海風，更需要被支撐的生活。本章聚焦居住、教育、醫療與交通的真實樣貌，並透過在地居民、移居者與旅行者的訪談，看見一座小鎮如何讓人「願意留下」與「能夠留下」。從完善的醫療體系到共學的教室、再到夜裡仍亮著燈的街巷，恆春，用自己的節奏，定義了什麼叫「宜居」。"
+        attractions={{
+          locations: [["落山風之吹風看海地 ","https://www.facebook.com/lsf.arts"],["恆春社福館","https://www.facebook.com/hcwc1233"],["屏南社區大學","https://www.facebook.com/PingTungSouthCC"],["恆春基督教醫院","https://www.facebook.com/hcchblog"],["無所事室","https://www.facebook.com/profile.php?id=61576702434649"],["恆春工作平台","https://www.facebook.com/groups/494464107282578"],["恆春半島公共事務討論社團","https://www.facebook.com/groups/736030359820116"],],
+        }}
       />
       <Outline
         title="宜居半島"

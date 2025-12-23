@@ -8,6 +8,28 @@ import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
 import Intro from "../layouts/land/move/Intro";
 
+const noodleShops = [
+  { name: "秋香麵店", address: "中山路48號" },
+  { name: "恆春麵．傳統口味", address: "南門路6號" },
+  { name: "阿香姨麵店（恆春福德店）", address: "福德路102號" },
+  { name: "四方食事麵食館", address: "中山路31號" },
+  { name: "王家古早味麻醬麵", address: "光復路4號" },
+  { name: "陳家麵館", address: "光復路38號" },
+  {
+    name: "無店名美食",
+    address: "東門路174巷11號（菜市場，牧場放山雞旁）",
+  },
+  { name: "小牛村", address: "中正路186號" },
+  { name: "謝家古早味麻醬麵", address: "恆南路221號" },
+  { name: "寶順號", address: "中山路82號" },
+  { name: "鼎上麵仔店", address: "中正路173之3號" },
+  { name: "莊家原汁牛肉麵", address: "文化路96巷11號" },
+  { name: "阿鴻麵店", address: "中正路100號" },
+  { name: "南門小吃部", address: "文化路168之2號" },
+  { name: "老娘牛肉麵", address: "福德路85號" },
+  { name: "阿桂姨麵店", address: "福德路48號" },
+];
+
 const Flavor = () => {
   return (
     <div className="flavor pages">
@@ -45,10 +67,24 @@ const Flavor = () => {
           ],
         ]}
         attractions={{
-          locations: [["吳家中式早餐（菜市場臭脯餅）",""], ["小山東早餐",""]],
+          locations: [
+            ["吳家中式早餐（菜市場臭脯餅）", ""],
+            ["小山東早餐", ""],
+          ],
         }}
         bottomImg={[
-          "./img/flavor/IMG_4679.JPG", "./img/flavor/IMG_4681.JPG", "./img/flavor/IMG_4682.JPG", "./img/flavor/IMG_4684.JPG", "./img/flavor/IMG_4688.JPG", "./img/flavor/IMG_4690.JPG", "./img/flavor/IMG_5029.JPG", "./img/flavor/IMG_5047.JPG", "./img/flavor/IMG_5052.JPG", "./img/flavor/IMG_5046.JPG", "./img/flavor/IMG_5035.JPG", "./img/flavor/IMG_5030.JPG"
+          "./img/flavor/IMG_4679.JPG",
+          "./img/flavor/IMG_4681.JPG",
+          "./img/flavor/IMG_4682.JPG",
+          "./img/flavor/IMG_4684.JPG",
+          "./img/flavor/IMG_4688.JPG",
+          "./img/flavor/IMG_4690.JPG",
+          "./img/flavor/IMG_5029.JPG",
+          "./img/flavor/IMG_5047.JPG",
+          "./img/flavor/IMG_5052.JPG",
+          "./img/flavor/IMG_5046.JPG",
+          "./img/flavor/IMG_5035.JPG",
+          "./img/flavor/IMG_5030.JPG",
         ]}
       />
       <PartRight
@@ -66,9 +102,28 @@ const Flavor = () => {
           ],
         ]}
         attractions={{
-          locations: [["縣城大麵",""], ["Mangia Pizza",""]],
+          locations: [
+            ["縣城大麵", ""],
+            ["Mangia Pizza", ""],
+          ],
         }}
-        bottomImg={["./img/flavor/IMG_4229.JPG", "./img/flavor/IMG_4236.JPG", "./img/flavor/IMG_4240.JPG", "./img/flavor/IMG_4247.JPG", "./img/flavor/IMG_4248.JPG", "./img/flavor/IMG_5094.JPG", "./img/flavor/IMG_5091.JPG", "./img/flavor/IMG_5090.JPG", "./img/flavor/IMG_5085.JPG", "./img/flavor/IMG_5084.JPG", "./img/flavor/IMG_5083.JPG", "./img/flavor/IMG_5082.JPG", "./img/flavor/IMG_5081.JPG", "./img/flavor/IMG_5078.JPG", "./img/flavor/IMG_5077.JPG", "./img/flavor/IMG_5076.JPG"
+        bottomImg={[
+          "./img/flavor/IMG_4229.JPG",
+          "./img/flavor/IMG_4236.JPG",
+          "./img/flavor/IMG_4240.JPG",
+          "./img/flavor/IMG_4247.JPG",
+          "./img/flavor/IMG_4248.JPG",
+          "./img/flavor/IMG_5094.JPG",
+          "./img/flavor/IMG_5091.JPG",
+          "./img/flavor/IMG_5090.JPG",
+          "./img/flavor/IMG_5085.JPG",
+          "./img/flavor/IMG_5084.JPG",
+          "./img/flavor/IMG_5083.JPG",
+          "./img/flavor/IMG_5082.JPG",
+          "./img/flavor/IMG_5081.JPG",
+          "./img/flavor/IMG_5078.JPG",
+          "./img/flavor/IMG_5077.JPG",
+          "./img/flavor/IMG_5076.JPG",
         ]}
       />
       <Intro
@@ -78,9 +133,21 @@ const Flavor = () => {
           "本地圖以恆春舊城區為範圍，標示在地人中午常吃的大麵店位置。路線非精確比例，而是依日常行走與生活動線繪製，希望帶你用一碗大麵，走進恆春最真實的中午風景。",
         ]}
       />
+      <div className="big_mag">
       <div className="sport_map_container">
         <img className="sport_map" src="./img/flavor/noodle_map.png" />
       </div>
+      <div className="map_address">
+        <ul>
+          {noodleShops.map((shop, index) => (
+            <li key={index}>
+              <span className="shop">{shop.name}</span>
+              <span className="address">地址：{shop.address}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+</div>
       <PartLeft
         id="dinner"
         image="./img/flavor/IMG_4811.JPG"
@@ -96,9 +163,33 @@ const Flavor = () => {
           ],
         ]}
         attractions={{
-          locations: [["咱的生魚片 (後壁湖)",""], ["30M BAR",""]],
+          locations: [
+            ["30M BAR", "https://www.facebook.com/30MBAR"],
+            ["恆春 HAPPY BIRD 快樂鳥", "https://www.facebook.com/happybird69"],
+            ["舌尖上的恆春", "https://www.facebook.com/hengchunfoodie"],
+            ["咱的生魚片 (後壁湖)", ""],
+          ],
         }}
-        bottomImg={["./img/flavor/IMG_4560.JPG", "./img/flavor/IMG_4554.JPG", "./img/flavor/IMG_4551.JPG", "./img/flavor/IMG_4547.JPG", "./img/flavor/IMG_4543.JPG", "./img/flavor/IMG_4541.JPG", "./img/flavor/IMG_4539.JPG", "./img/flavor/IMG_4534.JPG", "./img/flavor/IMG_4532.JPG", "./img/flavor/IMG_0907.JPG", "./img/flavor/IMG_4820.JPG", "./img/flavor/IMG_4814.JPG", "./img/flavor/IMG_4811.JPG", "./img/flavor/IMG_4807.JPG", "./img/flavor/IMG_4806.JPG", "./img/flavor/IMG_4803.JPG", "./img/flavor/IMG_4799.JPG", "./img/flavor/IMG_4795.JPG", "./img/flavor/IMG_4794.JPG"
+        bottomImg={[
+          "./img/flavor/IMG_4560.JPG",
+          "./img/flavor/IMG_4554.JPG",
+          "./img/flavor/IMG_4551.JPG",
+          "./img/flavor/IMG_4547.JPG",
+          "./img/flavor/IMG_4543.JPG",
+          "./img/flavor/IMG_4541.JPG",
+          "./img/flavor/IMG_4539.JPG",
+          "./img/flavor/IMG_4534.JPG",
+          "./img/flavor/IMG_4532.JPG",
+          "./img/flavor/IMG_0907.JPG",
+          "./img/flavor/IMG_4820.JPG",
+          "./img/flavor/IMG_4814.JPG",
+          "./img/flavor/IMG_4811.JPG",
+          "./img/flavor/IMG_4807.JPG",
+          "./img/flavor/IMG_4806.JPG",
+          "./img/flavor/IMG_4803.JPG",
+          "./img/flavor/IMG_4799.JPG",
+          "./img/flavor/IMG_4795.JPG",
+          "./img/flavor/IMG_4794.JPG",
         ]}
       />
       <PartRight
@@ -111,9 +202,28 @@ const Flavor = () => {
           "綠豆饌是恆春特有的消暑甜品，由去殼綠豆與 Q 彈的粉條組成，清涼解渴。此外，許多特色咖啡廳（如樹夏飲事、麋谷）選擇在老屋或特色建築中，提供手沖咖啡與在地甜點，成為移居者與旅人享受午後時光的秘密基地。",
         ]}
         attractions={{
-          locations: [["阿伯綠豆饌",""], ["艸野人綠豆沙",""]],
+          locations: [
+            ["南懶咖啡", "https://www.instagram.com/south.sloth.coffee.shop/"],
+            ["一芳海苔醬", "https://www.facebook.com/ifungSeaweed"],
+            ["阿伯綠豆饌", ""],
+            ["艸野人綠豆沙", ""],
+          ],
         }}
-        bottomImg={["./img/flavor/IMG_5197.JPG", "./img/flavor/IMG_5204.JPG", "./img/flavor/IMG_5210.JPG", "./img/flavor/IMG_4375.JPG", "./img/flavor/IMG_4381.JPG", "./img/flavor/IMG_4384.JPG", "./img/flavor/IMG_4392.JPG", "./img/flavor/IMG_4742.JPG", "./img/flavor/IMG_4749.JPG", "./img/flavor/IMG_4781.JPG", "./img/flavor/IMG_4782.JPG", "./img/flavor/IMG_4784.JPG", "./img/flavor/IMG_4792.JPG", "./img/flavor/IMG_4791.JPG"
+        bottomImg={[
+          "./img/flavor/IMG_5197.JPG",
+          "./img/flavor/IMG_5204.JPG",
+          "./img/flavor/IMG_5210.JPG",
+          "./img/flavor/IMG_4375.JPG",
+          "./img/flavor/IMG_4381.JPG",
+          "./img/flavor/IMG_4384.JPG",
+          "./img/flavor/IMG_4392.JPG",
+          "./img/flavor/IMG_4742.JPG",
+          "./img/flavor/IMG_4749.JPG",
+          "./img/flavor/IMG_4781.JPG",
+          "./img/flavor/IMG_4782.JPG",
+          "./img/flavor/IMG_4784.JPG",
+          "./img/flavor/IMG_4792.JPG",
+          "./img/flavor/IMG_4791.JPG",
         ]}
       />
       <PageBottom img="./IMG_5133.JPG" />

@@ -51,6 +51,9 @@ const Sport = () => {
           "./img/sport/000_4627-20190721.jpg",
           "./img/sport/000_4635-20190721.jpg",
         ]}
+        attractions={{
+          locations: [["台灣潛水 ","https://www.facebook.com/tdc79838170"],],
+        }}
       />
       <PartRight
         id="land"
@@ -79,6 +82,9 @@ const Sport = () => {
           "./img/sport/IMG_4593.JPG",
           "./img/sport/IMG_4580.JPG",
         ]}
+        attractions={{
+          locations: [["愛RUN騎 ","https://www.facebook.com/profile.php?id=100057307485812"],["恆春。伴島單車工作室","https://www.instagram.com/accompany_bike_studio/"], ["伴島瑜伽 ","https://www.instagram.com/accompany_yoga_studio/"]],
+        }}
       />
       <Intro
         id="sport_map"

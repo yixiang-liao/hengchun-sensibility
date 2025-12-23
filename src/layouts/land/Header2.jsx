@@ -8,6 +8,10 @@ const Header2 = ({
   icon_img,
   description1,
   description2,
+  attractions = {
+    label: "精選景點：",
+    locations: [],
+  },
 }) => {
   return (
     <header className="header2">
@@ -28,6 +32,30 @@ const Header2 = ({
           <div className="bottom">
             <p>{description1}</p>
             <p>{description2}</p>
+            {attractions?.locations?.length > 0 && (
+              <div className="attractions">
+                <span className="icon">#</span>
+
+                <span className="highlight">
+                  {attractions.label || "精選景點："}
+                </span>
+
+                <span className="locations">
+                  {attractions.locations.map(([name, url], index) => (
+                    <span key={index} className="location-item">
+                      {url ? (
+                        <a href={url} target="_blank" rel="noopener noreferrer">
+                          {name}
+                        </a>
+                      ) : (
+                        <span className="no-link">{name}</span>
+                      )}
+                      {index < attractions.locations.length - 1 && "、"}
+                    </span>
+                  ))}
+                </span>
+              </div>
+            )}
           </div>
           <div className="line" />
         </div>

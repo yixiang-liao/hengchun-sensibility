@@ -26,3 +26,89 @@
     }
   }
 }
+.map_address {
+  margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center; // 水平置中
+    align-items: center;
+    text-align: center;
+
+  ul {
+    list-style: none;      // ⬅️ 關掉點點
+    padding-left: 0;       // ⬅️ 拿掉預設縮排
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+
+    .shop {
+      display: block;
+      font-weight: 400;
+    }
+
+    .address {
+      display: block;
+      font-size: 0.9rem;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+.flavor {
+  .sport_map_container {
+    flex: 0 0 55%;   // 地圖佔左側
+  }
+
+  .map_address {
+    flex: 0 0 45%;   // 地址佔右側
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    ul {
+      padding: 0 1rem;
+    }
+  }
+}
+
+
+.big_mag {
+  display: flex;
+  align-items: flex-start;   // 地圖與文字頂對齊
+  justify-content: center;
+  padding: 0 2rem;
+  // gap: 2rem;                 // 地圖與清單距離
+}
+
+@media (max-width: 1400px) {
+  .big_mag {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flavor {
+    .sport_map_container,
+    .map_address {
+      flex: none;
+      width: 100%;
+    }
+
+    .map_address {
+      display: flex;
+      justify-content: center;   // ⬅️ 關鍵
+      align-items: flex-start;
+      text-align: center;          // 文字仍是書本式左對齊
+
+      ul {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;          // ⬅️ 關鍵：讓清單本體置中
+        padding: 0 1.5rem;
+
+      }
+    }
+  }
+}

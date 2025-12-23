@@ -51,6 +51,9 @@ const Culture = () => {
           "./img/culture/IMG_4495.JPG",
           "./img/culture/IMG_4493.JPG",
         ]}
+        attractions={{
+          locations: [["恆春文化中心","https://www.facebook.com/hengchuncc/"],],
+        }}
       />
       <PartRight
         id="local-language"
@@ -77,6 +80,9 @@ const Culture = () => {
           "./img/culture/IMG_4889.JPG",
           "./img/culture/IMG_4910.JPG",
         ]}
+        attractions={{
+          locations: [["屏東縣琅嶠半農半藝文化發展協會","https://www.facebook.com/PINTUNGagriculturewithart"],],
+        }}
       />
       <PartLeft
         id="faith-festivals"
@@ -106,6 +112,9 @@ const Culture = () => {
           "./img/culture/IMG_4278.JPG",
           "./img/culture/IMG_4279.JPG",
         ]}
+        attractions={{
+          locations: [["車城福安宮","https://www.facebook.com/FuanTemple1662"],["恆春縣城清朝官廟天后宮 ","https://www.facebook.com/profile.php?id=100070409160903"]],
+        }}
       />
       <PartRight
         id="youth-innovation"
@@ -133,6 +142,9 @@ const Culture = () => {
           "./img/culture/IMG_4755.JPG",
           "./img/culture/IMG_4749.JPG",
         ]}
+        attractions={{
+          locations: [["哈姆鼠與你","https://www.facebook.com/profile.php?id=100057088404737"],["紅氣球書屋 ","https://www.facebook.com/LBRBOOKS"]],
+        }}
       />
       <PageBottom img="./IMG_5133.JPG" />
       <BackToTopButton />

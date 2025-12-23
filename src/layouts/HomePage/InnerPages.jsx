@@ -175,6 +175,9 @@ const InnerPages = () => {
             <p className="ack-title">視覺設計</p>
             <p className="inner_p">儒家設計專案團隊</p>
 
+            <p className="ack-title">網站開發</p>
+            <p className="inner_p">艾墨品牌創造事業集團｜網站設計總監 廖翊翔、UI視覺設計師 陳品宇、助理工程師 黃楷烜</p>
+
             <p className="ack-title">特別感謝</p>
             <p className="inner_p">紅氣球書屋 /愛RUN騎 / 南懶咖啡 / 30M BAR / 阿伯綠豆饌 / 一芳海苔醬 / 小山東早點 / 吳家中式早餐 / 縣城大麵 / Mangia Pizza / 咱的海產店 / 艸野人綠豆沙 / 夭夭藝文工作室 / <br/>以及每一位居住在恆春的人們</p>
           </div>

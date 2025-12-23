@@ -102,6 +102,11 @@
                   border-bottom-color: #d1421c; // 你站內主色
                   color: #d1421c;
                 }
+
+    .no-link {
+      color: rgba(0, 0, 0, 0.6); // 比連結淡一點
+      cursor: default;
+    }
               }
             }
           }
@@ -305,6 +310,11 @@
                   border-bottom-color: #d1421c; // 你站內主色
                   color: #d1421c;
                 }
+
+    .no-link {
+      color: rgba(0, 0, 0, 0.6); // 比連結淡一點
+      cursor: default;
+    }
               }
             }
           }

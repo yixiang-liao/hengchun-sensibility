@@ -51,9 +51,13 @@ const PartRight = ({
                 <span className="locations">
                   {attractions.locations.map(([name, url], index) => (
                     <span key={index} className="location-item">
-                      <a href={url} target="_blank" rel="noopener noreferrer">
-                        {name}
-                      </a>
+                      {url ? (
+                        <a href={url} target="_blank" rel="noopener noreferrer">
+                          {name}
+                        </a>
+                      ) : (
+                        <span className="no-link">{name}</span>
+                      )}
                       {index < attractions.locations.length - 1 && "、"}
                     </span>
                   ))}
