@@ -1,0 +1,82 @@
+.loading-page {
+  position: fixed;
+  inset: 0;
+  background: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+.loading-page.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.loading-page.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-content {
+  text-align: center;
+  padding: 0 1.5rem; // ⭐ 手機左右留白
+  width: 100%;
+  max-width: 600px; // ⭐ 桌機不要太散
+}
+
+/* LOGO */
+.loading-logo {
+  width: 300px;
+  max-width: 80vw;   // ⭐ 手機自動縮
+  height: auto;
+  margin-bottom: 1.2rem;
+  user-select: none;
+}
+
+/* 動線 */
+.loading-line {
+  width: 500px;
+  max-width: 100%;   // ⭐ 防止手機爆版
+  height: 1px;
+  background: #d1421c;
+  margin: 0.8rem auto;
+  animation: lineMove 1.6s ease-in-out infinite;
+}
+
+.loading-text {
+  font-size: 0.9rem;
+  opacity: 0.65;
+  letter-spacing: 0.1rem;
+  color: #cccccc;
+}
+
+/* animation */
+@keyframes lineMove {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%; // ⭐ 用 100% 才能 RWD
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@media (max-width: 480px) {
+  .loading-logo {
+    width: 200px;
+  }
+
+  .loading-text {
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+  }
+}
