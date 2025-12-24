@@ -5,10 +5,12 @@ import Outline from "../layouts/land/Outline";
 import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
 import PageBottom from "../layouts/land/PageBottom";
+import PageTitle from "../services/PageTitle";
 
 const Ecology = () => {
   return (
     <div className="ecology pages">
+          <PageTitle title="生態半島" />
       <Header2
         title="生態半島"
         subtitle="認識自然的最佳場域"

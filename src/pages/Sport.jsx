@@ -9,6 +9,7 @@ import PartRight from "../layouts/land/ecology/PartRight";
 import Intro from "../layouts/land/move/Intro";
 
 import PageBottom from "../layouts/land/PageBottom";
+import PageTitle from "../services/PageTitle";
 
 const Sport = () => {
   return (

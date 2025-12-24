@@ -7,10 +7,12 @@ import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
 
 import PageBottom from "../layouts/land/PageBottom";
+import PageTitle from "../services/PageTitle";
 
 const Culture = () => {
   return (
     <div className="culture pages">
+          <PageTitle title="文化半島" />
       <Header2
         title="文化半島"
         subtitle="生活累積的厚度"

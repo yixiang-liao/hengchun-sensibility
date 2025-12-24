@@ -7,6 +7,7 @@ import PageBottom from "../layouts/land/PageBottom";
 import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
 import Intro from "../layouts/land/move/Intro";
+import PageTitle from "../services/PageTitle";
 
 const noodleShops = [
   { name: "秋香麵店", address: "中山路48號" },
@@ -33,6 +34,7 @@ const noodleShops = [
 const Flavor = () => {
   return (
     <div className="flavor pages">
+          <PageTitle title="風味半島" />
       <Header2
         title="風味半島"
         subtitle="風土產生的滋味"

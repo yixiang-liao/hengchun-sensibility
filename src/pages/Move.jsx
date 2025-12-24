@@ -7,12 +7,14 @@ import Intro from "../layouts/land/move/Intro";
 import VisitorsLeft from "../layouts/land/move/VisitorsLeft";
 import VisitorsRight from "../layouts/land/move/VisitorsRight";
 import Traveler from "../layouts/land/move/Traveler";
+import PageTitle from "../services/PageTitle";
 
 import PageBottom from "../layouts/land/PageBottom";
 
 const Move = () => {
   return (
     <div className="move pages">
+          <PageTitle title="宜居半島" />
       <Header2
         title="宜居半島"
         subtitle="聽見日常恆春不同的聲音"

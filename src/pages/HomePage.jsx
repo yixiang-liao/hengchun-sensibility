@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import BackToTopButton from "../components/BackToTopButton";
 import InnerPages from "../layouts/HomePage/InnerPages";
+import PageTitle from "../services/PageTitle";
 
 const HomePage = () => {
   const [showLetter, setShowLetter] = useState(false);
   return (
     <div className="homepage">
+      <PageTitle title="首頁" />
       <div className="home" id="home">
         <div></div>
         <div className="profile">

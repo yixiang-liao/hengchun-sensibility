@@ -6,6 +6,7 @@ import Outline from "../layouts/land/Outline";
 import PageBottom from "../layouts/land/PageBottom";
 import PartLeft from "../layouts/land/ecology/PartLeft";
 import PartRight from "../layouts/land/ecology/PartRight";
+import PageTitle from "../services/PageTitle";
 
 
 const quadrantData = [
@@ -43,10 +44,11 @@ const Quadrant = () => {
   const [activeQuadrant, setActiveQuadrant] = useState(null);
   return (
     <div className="quadrant pages">
+          <PageTitle title="恆春人的生活象限" />
       <Header2
         title="恆春人的生活象限"
         icon_img="./icon/flavor_icon.png"
-        bgImage="./img/move/IMG_4785.JPG"
+        bgImage="./img/quadrant/IMG_5005.JPG"
         description1="「恆春象限」是將恆春豐富的生活樣態系統化的概念模型。它不只是理論，而是恆春人長年以來「靠感覺生活」的體現。這個座標軸以「恆春感性」為核心，將我們在前面章節探索的五大永續面向（生態、文化、風味、運動、宜居），定錨在由人文、生態天空和海洋構成的四個生活方位上。本章將逐一解構這四個象限，展示恆春的生活是如何在風、光、人、情的交會中，找到獨特的平衡。"
       />
       <Outline
