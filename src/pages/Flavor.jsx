@@ -70,8 +70,8 @@ const Flavor = () => {
         ]}
         attractions={{
           locations: [
-            ["吳家中式早餐（菜市場臭脯餅）", ""],
-            ["小山東早餐", ""],
+            ["吳家中式早餐（菜市場臭脯餅）", "https://www.facebook.com/profile.php?id=100054585184303"],
+            ["小山東早餐", "https://www.facebook.com/xiaoshandonghc"],
           ],
         }}
         bottomImg={[
@@ -105,8 +105,8 @@ const Flavor = () => {
         ]}
         attractions={{
           locations: [
-            ["縣城大麵", ""],
-            ["Mangia Pizza", ""],
+            ["縣城大麵", "https://www.facebook.com/County.noodles"],
+            ["Mangia Pizza", "https://www.facebook.com/MangiaPizza"],
           ],
         }}
         bottomImg={[
@@ -169,7 +169,7 @@ const Flavor = () => {
             ["30M BAR", "https://www.facebook.com/30MBAR"],
             ["恆春 HAPPY BIRD 快樂鳥", "https://www.facebook.com/happybird69"],
             ["舌尖上的恆春", "https://www.facebook.com/hengchunfoodie"],
-            ["咱的生魚片 (後壁湖)", ""],
+            ["咱的海產店", "https://www.facebook.com/profile.php?id=100063743570475"],
           ],
         }}
         bottomImg={[
@@ -207,8 +207,8 @@ const Flavor = () => {
           locations: [
             ["南懶咖啡", "https://www.instagram.com/south.sloth.coffee.shop/"],
             ["一芳海苔醬", "https://www.facebook.com/ifungSeaweed"],
-            ["阿伯綠豆饌", ""],
-            ["艸野人綠豆沙", ""],
+            ["阿伯綠豆饌", "https://www.facebook.com/profile.php?id=100063655074554"],
+            ["艸野人綠豆沙", "https://www.facebook.com/profile.php?id=100066600080653"],
           ],
         }}
         bottomImg={[

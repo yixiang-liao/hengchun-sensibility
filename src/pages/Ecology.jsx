@@ -62,7 +62,7 @@ const Ecology = () => {
           "而最具人氣的南灣，以細緻的白沙與蔚藍的海色聞名，這裏訴說著人們與生態間共存的故事篇章。作為享受這片海域的居民和訪客，我們都肩負著守護的責任，確保這場白沙、潮汐與生命的永續，能夠永遠在恆春半島的海岸線迴盪。",
         ]}
         attractions={{
-          locations: [["港口社區生態旅遊","https://www.facebook.com/gangkou.Ecotourism",],["後灣社區生態旅遊","https://www.facebook.com/HouwanTour"],["屏東國立海洋生物博物館","https://www.facebook.com/HSWEC"],["後壁湖潮間帶"], ["南灣"],],
+          locations: [["港口社區生態旅遊","https://www.facebook.com/gangkou.Ecotourism",],["後灣社區生態旅遊","https://www.facebook.com/HouwanTour"],["屏東國立海洋生物博物館","https://www.facebook.com/HSWEC"],["後壁湖潮間帶","https://www.facebook.com/groups/169702133671381"], ["南灣","https://www.ktnp.gov.tw/News_Content2.aspx?n=85E1E406503C665B&sms=C88B5251F308CE96&s=EFF54F261A7391A8"],],
         }}
         bottomImg={[
           "./img/ecology/JCE_0477-20151107.jpg",
@@ -82,7 +82,7 @@ const Ecology = () => {
           "白日的鷹群飛過，傍晚時刻關山則上演著另一場光影盛宴。夕陽緩緩沉入海平面，將天空染成一片金色。到了夜晚，站在龍磐一望無際的草原上，頭頂的星空浩瀚無垠，讓恆春多了一幅畫。恆春的空域，是風、光、生命的忠實體現。",
         ]}
         attractions={{
-          locations: [["龍鑾潭"], ["關山"], ["龍磐公園"]],
+          locations: [["龍鑾潭"], ["關山","https://www.ktnp.gov.tw/News_Content2.aspx?n=8A4486FBFD6DD5D3&sms=C88B5251F308CE96&s=7F2B5F47DBC1850D"], ["龍磐公園","https://www.ktnp.gov.tw/News_Content2.aspx?n=28AB1D16ECF7E63C&sms=C88B5251F308CE96&s=C1E50972440D43B2"]],
         }}
         bottomImg={[
           "./img/ecology/000_3523.jpg",
