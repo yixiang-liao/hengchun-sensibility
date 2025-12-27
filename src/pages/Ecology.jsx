@@ -82,7 +82,7 @@ const Ecology = () => {
           "白日的鷹群飛過，傍晚時刻關山則上演著另一場光影盛宴。夕陽緩緩沉入海平面，將天空染成一片金色。到了夜晚，站在龍磐一望無際的草原上，頭頂的星空浩瀚無垠，讓恆春多了一幅畫。恆春的空域，是風、光、生命的忠實體現。",
         ]}
         attractions={{
-          locations: [["龍鑾潭"], ["關山","https://www.ktnp.gov.tw/News_Content2.aspx?n=8A4486FBFD6DD5D3&sms=C88B5251F308CE96&s=7F2B5F47DBC1850D"], ["龍磐公園","https://www.ktnp.gov.tw/News_Content2.aspx?n=28AB1D16ECF7E63C&sms=C88B5251F308CE96&s=C1E50972440D43B2"]],
+          locations: [["龍鑾潭","https://www.ktnp.gov.tw/News_Content2.aspx?n=28AB1D16ECF7E63C&sms=C88B5251F308CE96&s=5FA343C11F20C5E7"], ["關山","https://www.ktnp.gov.tw/News_Content2.aspx?n=8A4486FBFD6DD5D3&sms=C88B5251F308CE96&s=7F2B5F47DBC1850D"], ["龍磐公園","https://www.ktnp.gov.tw/News_Content2.aspx?n=28AB1D16ECF7E63C&sms=C88B5251F308CE96&s=C1E50972440D43B2"]],
         }}
         bottomImg={[
           "./img/ecology/000_3523.jpg",

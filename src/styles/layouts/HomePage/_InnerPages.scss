@@ -48,17 +48,18 @@
       }
     }
   }
-  .land5 {
+.land5 {
   display: flex;
   justify-content: center;
   padding: 3rem 0;
 
   img {
-    width: auto;      // 原始尺寸
-    height: auto;
-    max-width: none;
+    width: 900px;      // ⭐ 固定寬度（核心）
+    height: auto;      // ⭐ 比例自動
+    display: block;
   }
 }
+
 
 
   .content {
@@ -188,20 +189,21 @@
     padding: 2.5rem 0;
 
     img {
-      width: 720px;   // ⭐ 固定寬度（平板）
-      max-width: 100%;
+      width: 720px !important;
     }
   }
 }
+
 @media (max-width: 768px) {
   .land5 {
     padding: 2rem 0;
 
     img {
-      width: 320px !important;   // ⭐ 固定寬度（手機）
+      width: 320px !important;
     }
   }
 }
+
 @media (max-width: 1024px) {
   .block.acknowledgements {
     margin: 5rem 0 6rem;

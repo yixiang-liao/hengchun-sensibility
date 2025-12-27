@@ -804,9 +804,9 @@ html {
   padding: 3rem 0;
 }
 .inner-pages .land5 img {
-  width: auto;
+  width: 900px;
   height: auto;
-  max-width: none;
+  display: block;
 }
 .inner-pages .content {
   display: flex;
@@ -922,8 +922,7 @@ html {
     padding: 2.5rem 0;
   }
   .land5 img {
-    width: 720px;
-    max-width: 100%;
+    width: 720px !important;
   }
 }
 @media (max-width: 768px) {
